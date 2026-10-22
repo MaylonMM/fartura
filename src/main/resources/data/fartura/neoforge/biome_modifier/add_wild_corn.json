@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#fartura:is_tropical",
+  "biomes": "#fartura:wild_corn_biomes",
   "features": "fartura:wild_corn",
   "step": "vegetal_decoration"
 }
