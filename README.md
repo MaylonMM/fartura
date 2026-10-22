@@ -1,10 +1,10 @@
-# Brasil Foods
+# Fartura
 
-Mod de Minecraft que adiciona comidas típicas brasileiras.
+Mod de Minecraft que adiciona comidas típicas brasileiras e de outros lugares, com foco em agricultura.
 
 | Item | Valor |
 |---|---|
-| Mod ID | `brasilfoods` |
+| Mod ID | `fartura` |
 | Minecraft | 1.21.1 |
 | Loader | NeoForge 21.1.233 |
 | Java | 21 |
@@ -12,7 +12,7 @@ Mod de Minecraft que adiciona comidas típicas brasileiras.
 ## Estrutura do projeto
 
 ```
-brasilfoods/
+fartura/
 ├── settings.gradle.kts      # Declara o Stonecutter e a lista de versões (nós)
 ├── stonecutter.gradle.kts   # Controller: define a versão ativa no IDE/build
 ├── build.gradle.kts         # Build compartilhado por todas as versões (NeoGradle)
@@ -23,12 +23,12 @@ brasilfoods/
 ├── gradlew / gradlew.bat    # Gradle Wrapper (usar sempre este)
 ├── gradle/wrapper/
 ├── src/main/
-│   ├── java/com/brasilfoods/
-│   │   ├── BrasilFoods.java        # Classe principal do mod (@Mod)
+│   ├── java/com/fartura/
+│   │   ├── Fartura.java            # Classe principal do mod (@Mod)
 │   │   └── registry/               # Registros: itens, blocos, abas criativas
 │   └── resources/
 │       ├── META-INF/neoforge.mods.toml   # Metadados do mod (preenchidos via gradle.properties)
-│       └── assets/brasilfoods/
+│       └── assets/fartura/
 │           ├── lang/               # Traduções (pt_br.json, en_us.json)
 │           ├── models/item/        # Modelos dos itens
 │           └── textures/item/      # Texturas PNG dos itens
@@ -38,11 +38,11 @@ brasilfoods/
 
 ## Abrindo no IntelliJ IDEA
 
-1. `File > Open` e selecione a pasta `brasilfoods` (o IntelliJ detecta o Gradle automaticamente).
+1. `File > Open` e selecione a pasta do projeto (o IntelliJ detecta o Gradle automaticamente).
 2. Use JDK 21 no projeto.
 3. Aguarde o primeiro sync do Gradle (baixa o Minecraft e o NeoForge; demora alguns minutos).
 4. Use o seletor de versão do Stonecutter no IDE (ou `stonecutter.gradle.kts`) para escolher a versão ativa.
-5. Rode `runClient` pela aba Gradle (`brasilfoods > Tasks > neoforge > runClient`) ou pelas configurações de run geradas.
+5. Rode `runClient` pela aba Gradle (`fartura > Tasks > neoforge > runClient`) ou pelas configurações de run geradas.
 
 ## Comandos
 

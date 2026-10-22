@@ -1,6 +1,6 @@
-package com.brasilfoods.registry;
+package com.fartura.registry;
 
-import static com.brasilfoods.BrasilFoods.MODID;
+import static com.fartura.Fartura.MODID;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BRASIL_FOODS = TABS.register("brasil_foods",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FARTURA = TABS.register("fartura",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + MODID))
                     .withTabsBefore(CreativeModeTabs.COMBAT)

@@ -1,6 +1,6 @@
-package com.brasilfoods.registry;
+package com.fartura.registry;
 
-import static com.brasilfoods.BrasilFoods.MODID;
+import static com.fartura.Fartura.MODID;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
