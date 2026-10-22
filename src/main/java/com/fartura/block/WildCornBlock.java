@@ -13,7 +13,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class WildCornBlock extends BushBlock {
     public static final MapCodec<WildCornBlock> CODEC = simpleCodec(WildCornBlock::new);
-    private static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 14, 14);
+    private static final VoxelShape SHAPE = Block.box(5, 0, 5, 11, 10, 11);
 
     public WildCornBlock(Properties properties) {
         super(properties);

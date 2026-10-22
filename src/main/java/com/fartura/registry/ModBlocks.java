@@ -21,6 +21,7 @@ public final class ModBlocks {
                     .noCollission()
                     .instabreak()
                     .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
                     .pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<CornCropBlock> CORN_CROP = BLOCKS.register("corn_crop",

@@ -7,8 +7,11 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.util.Mth;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,7 +25,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 /**
  * Lower half of the corn plant. Grows on farmland until age 7, then places the top half above it.
  */
-public class CornCropBlock extends BushBlock {
+public class CornCropBlock extends BushBlock implements BonemealableBlock {
     public static final MapCodec<CornCropBlock> CODEC = simpleCodec(CornCropBlock::new);
     public static final int MAX_AGE = 7;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
@@ -63,6 +66,22 @@ public class CornCropBlock extends BushBlock {
         } else if (level.isEmptyBlock(pos.above())) {
             level.setBlock(pos.above(), ModBlocks.CORN_CROP_TOP.get().defaultBlockState(), 3);
         }
+    }
+
+    @Override
+    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
+        return state.getValue(AGE) < MAX_AGE;
+    }
+
+    @Override
+    public boolean isBonemealSuccess(Level level, RandomSource random, BlockPos pos, BlockState state) {
+        return true;
+    }
+
+    @Override
+    public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+        int age = Math.min(MAX_AGE, state.getValue(AGE) + Mth.nextInt(random, 2, 5));
+        level.setBlock(pos, state.setValue(AGE, age), 2);
     }
 
     @Override
