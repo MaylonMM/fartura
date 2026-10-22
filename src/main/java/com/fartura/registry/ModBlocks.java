@@ -30,7 +30,7 @@ public final class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.CROP)
-                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .offsetType(BlockBehaviour.OffsetType.NONE)
                     .pushReaction(PushReaction.DESTROY)));
 
     private ModBlocks() {
