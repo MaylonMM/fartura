@@ -13,10 +13,14 @@ Mod de Minecraft que adiciona comidas típicas brasileiras.
 
 ```
 brasilfoods/
-├── gradle.properties        # Versões (MC, loader, mod) — o único lugar que muda por versão
-├── build.gradle             # Configuração de build (NeoGradle)
-├── settings.gradle
-├── gradlew / gradlew.bat    # Gradle Wrapper (usar sempre este, não o gradle instalado)
+├── settings.gradle.kts      # Declara o Stonecutter e a lista de versões (nós)
+├── stonecutter.gradle.kts   # Controller: define a versão ativa no IDE/build
+├── build.gradle.kts         # Build compartilhado por todas as versões (NeoGradle)
+├── gradle.properties        # Metadados do mod e configurações comuns
+├── versions/
+│   └── 1.21.1-neoforge/
+│       └── gradle.properties  # MC, NeoForge, Parchment e faixas de versão deste nó
+├── gradlew / gradlew.bat    # Gradle Wrapper (usar sempre este)
 ├── gradle/wrapper/
 ├── src/main/
 │   ├── java/com/brasilfoods/
@@ -37,13 +41,14 @@ brasilfoods/
 1. `File > Open` e selecione a pasta `brasilfoods` (o IntelliJ detecta o Gradle automaticamente).
 2. Use JDK 21 no projeto.
 3. Aguarde o primeiro sync do Gradle (baixa o Minecraft e o NeoForge; demora alguns minutos).
-4. Rode `runClient` pela aba Gradle (`brasilfoods > Tasks > neoforge > runClient`) ou pelas configurações de run geradas.
+4. Use o seletor de versão do Stonecutter no IDE (ou `stonecutter.gradle.kts`) para escolher a versão ativa.
+5. Rode `runClient` pela aba Gradle (`brasilfoods > Tasks > neoforge > runClient`) ou pelas configurações de run geradas.
 
 ## Comandos
 
 ```powershell
-.\gradlew.bat build        # compila e gera o .jar em build/libs
-.\gradlew.bat runClient    # abre o Minecraft com o mod
+.\gradlew.bat build                        # compila a versão ativa e gera o .jar em versions/<nó>/build/libs
+.\gradlew.bat :1.21.1-neoforge:runClient   # abre o Minecraft com o mod nesta versão
 ```
 
 ## Adicionando um novo item de comida
@@ -52,22 +57,17 @@ brasilfoods/
 2. Adicione o nome em `lang/pt_br.json` e `lang/en_us.json`.
 3. Crie `models/item/<nome>.json` e a textura em `textures/item/<nome>.png`.
 
-## Versionamento para outros loaders e versões
+## Adicionando uma nova versão (Minecraft ou loader)
 
-Hoje o projeto suporta **uma** combinação (NeoForge 1.21.1). Para expandir (Forge, Fabric, outras versões de Minecraft), a recomendação é migrar para o **[Stonecutter](https://stonecutter.kikugie.dev/)**, que mantém um único código-fonte e gera uma variante por versão.
+1. Em `settings.gradle.kts`, adicione o nó dentro de `stonecutter { create(rootProject) { ... } }`:
+   ```kotlin
+   versions("1.21.1-neoforge" to "1.21.1", "1.20.1-forge" to "1.20.1")
+   ```
+2. Crie `versions/1.20.1-forge/gradle.properties` com as propriedades da versão (copie de `1.21.1-neoforge` e ajuste).
+3. Use `//? if <condição> { ... } //?}` nos arquivos de `src/` apenas onde a API mudar.
+4. Rode `.\gradlew.bat build` para validar a versão ativa.
 
-Estrutura-alvo, quando for necessário:
-
-```
-brasilfoods/
-├── versions/
-│   ├── 1.21.1-neoforge/gradle.properties   # valores do gradle.properties atual
-│   ├── 1.21.x-neoforge/gradle.properties
-│   └── 1.20.1-forge/gradle.properties
-└── src/...                                  # código único, com trechos condicionais por versão
-```
-
-Até lá, mantenha `gradle.properties` como fonte das versões e evite espalhar números de versão pelo código.
+Com Stonecutter, o código fica em `src/` e cada nó gera a sua variante, sem duplicar o projeto.
 
 ## Licença
 

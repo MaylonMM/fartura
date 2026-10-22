@@ -23,4 +23,6 @@ run
 runs
 run-data
 
+# stonecutter: cache local
+.stonecutter
 repo
