@@ -51,6 +51,12 @@ fartura/
 .\gradlew.bat :1.21.1-neoforge:runClient   # abre o Minecraft com o mod nesta versão
 ```
 
+## Compatibilidade com outros mods
+
+Os itens do Fartura entram nas tags comuns do NeoForge (`c:`), como `c:crops/corn`, `c:seeds/corn` e `c:grains/corn`.
+Assim, receitas de outros mods e as nossas que usam essas tags aceitam o milho de qualquer mod instalado (Croptopia, Farm and Charm, Farmer's Delight etc.), sem dependência obrigatória.
+Para adicionar um item a uma tag, edite `src/main/resources/data/c/tags/item/`.
+
 ## Adicionando um novo item de comida
 
 1. Registre em `registry/ModItems.java` com `ITEMS.registerSimpleItem(...)`.
