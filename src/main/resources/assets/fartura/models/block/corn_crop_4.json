@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "fartura:block/corn_crop_4"
+    "cross": "fartura:block/corn_crop_4"
   }
 }

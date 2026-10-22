@@ -31,6 +31,7 @@ public final class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.CROP)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
                     .pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<CornCropTopBlock> CORN_CROP_TOP = BLOCKS.register("corn_crop_top",
@@ -39,6 +40,7 @@ public final class ModBlocks {
                     .noCollission()
                     .instabreak()
                     .sound(SoundType.CROP)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
                     .pushReaction(PushReaction.DESTROY)));
 
     private ModBlocks() {
