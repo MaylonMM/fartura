@@ -1,6 +1,6 @@
 {
-  "parent": "fartura:block/corn_cross",
   "textures": {
-    "cross": "fartura:block/corn_crop_top"
-  }
+    "particle": "fartura:block/corn_crop_top"
+  },
+  "elements": []
 }
