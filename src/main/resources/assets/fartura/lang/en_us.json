@@ -1,4 +1,8 @@
 {
-  "item.fartura.pao_de_queijo": "Cheese Bread",
-  "itemGroup.fartura": "Fartura"
+  "itemGroup.fartura": "Fartura",
+  "item.fartura.corn": "Corn",
+  "item.fartura.corn_kernels": "Corn Kernels",
+  "block.fartura.wild_corn": "Wild Corn",
+  "block.fartura.corn_crop": "Corn Plant",
+  "block.fartura.corn_crop_top": "Corn Plant Top"
 }

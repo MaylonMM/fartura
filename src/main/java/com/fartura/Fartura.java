@@ -1,5 +1,6 @@
 package com.fartura;
 
+import com.fartura.registry.ModBlocks;
 import com.fartura.registry.ModCreativeTabs;
 import com.fartura.registry.ModItems;
 
@@ -11,6 +12,7 @@ public class Fartura {
     public static final String MODID = "fartura";
 
     public Fartura(IEventBus modEventBus) {
+        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
     }

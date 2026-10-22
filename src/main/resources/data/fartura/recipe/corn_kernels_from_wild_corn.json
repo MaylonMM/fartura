@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fartura:wild_corn"
+    }
+  ],
+  "result": {
+    "id": "fartura:corn_kernels",
+    "count": 1
+  }
+}
