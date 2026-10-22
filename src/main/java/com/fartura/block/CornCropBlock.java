@@ -1,11 +1,8 @@
 package com.fartura.block;
 
-import com.fartura.registry.ModBlocks;
-
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.Level;
@@ -23,7 +20,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 /**
- * Lower half of the corn plant. Grows on farmland until age 7, then places the top half above it.
+ * Corn plant. Grows on farmland until age 7; the single block is drawn stretched over two block heights.
  */
 public class CornCropBlock extends BushBlock implements BonemealableBlock {
     public static final MapCodec<CornCropBlock> CODEC = simpleCodec(CornCropBlock::new);
@@ -59,12 +56,8 @@ public class CornCropBlock extends BushBlock implements BonemealableBlock {
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         int age = state.getValue(AGE);
-        if (age < MAX_AGE) {
-            if (level.getRawBrightness(pos.above(), 0) >= 9 && random.nextInt(4) == 0) {
-                level.setBlock(pos, state.setValue(AGE, age + 1), 2);
-            }
-        } else if (level.isEmptyBlock(pos.above())) {
-            level.setBlock(pos.above(), ModBlocks.CORN_CROP_TOP.get().defaultBlockState(), 3);
+        if (age < MAX_AGE && level.getRawBrightness(pos.above(), 0) >= 9 && random.nextInt(4) == 0) {
+            level.setBlock(pos, state.setValue(AGE, age + 1), 2);
         }
     }
 
@@ -82,16 +75,5 @@ public class CornCropBlock extends BushBlock implements BonemealableBlock {
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
         int age = Math.min(MAX_AGE, state.getValue(AGE) + Mth.nextInt(random, 2, 5));
         level.setBlock(pos, state.setValue(AGE, age), 2);
-    }
-
-    @Override
-    public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
-        if (!level.isClientSide) {
-            BlockPos above = pos.above();
-            if (level.getBlockState(above).is(ModBlocks.CORN_CROP_TOP.get())) {
-                level.destroyBlock(above, true, player);
-            }
-        }
-        return super.playerWillDestroy(level, pos, state, player);
     }
 }

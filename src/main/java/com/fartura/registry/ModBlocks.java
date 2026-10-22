@@ -2,7 +2,6 @@ package com.fartura.registry;
 
 import com.fartura.Fartura;
 import com.fartura.block.CornCropBlock;
-import com.fartura.block.CornCropTopBlock;
 import com.fartura.block.WildCornBlock;
 
 import net.minecraft.world.level.block.SoundType;
@@ -29,15 +28,6 @@ public final class ModBlocks {
                     .mapColor(MapColor.PLANT)
                     .noCollission()
                     .randomTicks()
-                    .instabreak()
-                    .sound(SoundType.CROP)
-                    .offsetType(BlockBehaviour.OffsetType.XZ)
-                    .pushReaction(PushReaction.DESTROY)));
-
-    public static final DeferredBlock<CornCropTopBlock> CORN_CROP_TOP = BLOCKS.register("corn_crop_top",
-            () -> new CornCropTopBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PLANT)
-                    .noCollission()
                     .instabreak()
                     .sound(SoundType.CROP)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
