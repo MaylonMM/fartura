@@ -1,8 +1,11 @@
 {
   "type": "fartura:mortar",
-  "ingredient": {
-    "tag": "c:crops/corn"
-  },
+  "ingredient": [
+    "fartura:corn_kernels",
+    {
+      "tag": "c:seeds/corn"
+    }
+  ],
   "result": {
     "id": "fartura:corn_flour",
     "count": 1
