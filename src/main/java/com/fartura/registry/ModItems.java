@@ -25,6 +25,15 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> WILD_CORN =
             ITEMS.registerSimpleBlockItem("wild_corn", ModBlocks.WILD_CORN);
 
+    public static final DeferredItem<Item> CORN_FLOUR = ITEMS.registerSimpleItem("corn_flour",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1)
+                    .saturationModifier(0.1f)
+                    .build()));
+
+    public static final DeferredItem<BlockItem> STONE_MORTAR =
+            ITEMS.registerSimpleBlockItem("stone_mortar", ModBlocks.STONE_MORTAR);
+
     private ModItems() {
     }
 }

@@ -2,6 +2,10 @@
   "itemGroup.fartura": "Fartura",
   "item.fartura.corn": "Corn",
   "item.fartura.corn_kernels": "Corn Kernels",
+  "item.fartura.corn_flour": "Corn Flour",
   "block.fartura.wild_corn": "Wild Corn",
-  "block.fartura.corn_crop": "Corn Plant"
+  "block.fartura.corn_crop": "Corn Plant",
+  "block.fartura.stone_mortar": "Stone Mortar",
+  "container.fartura.stone_mortar": "Stone Mortar",
+  "jei.fartura.stone_mortar": "Stone Mortar"
 }

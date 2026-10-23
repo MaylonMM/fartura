@@ -21,6 +21,8 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.CORN.get());
                         output.accept(ModItems.CORN_KERNELS.get());
                         output.accept(ModItems.WILD_CORN.get());
+                        output.accept(ModItems.CORN_FLOUR.get());
+                        output.accept(ModItems.STONE_MORTAR.get());
                     })
                     .build());
 

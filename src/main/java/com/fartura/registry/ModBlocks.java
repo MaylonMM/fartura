@@ -2,6 +2,7 @@ package com.fartura.registry;
 
 import com.fartura.Fartura;
 import com.fartura.block.CornCropBlock;
+import com.fartura.block.StoneMortarBlock;
 import com.fartura.block.WildCornBlock;
 
 import net.minecraft.world.level.block.SoundType;
@@ -32,6 +33,14 @@ public final class ModBlocks {
                     .sound(SoundType.CROP)
                     .offsetType(BlockBehaviour.OffsetType.NONE)
                     .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<StoneMortarBlock> STONE_MORTAR = BLOCKS.register("stone_mortar",
+            () -> new StoneMortarBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(2.0f, 6.0f)
+                    .sound(SoundType.STONE)
+                    .noOcclusion()));
 
     private ModBlocks() {
     }
