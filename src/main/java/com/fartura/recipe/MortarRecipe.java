@@ -1,30 +1,28 @@
 package com.fartura.recipe;
 
 import com.fartura.registry.ModRecipes;
+import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
-import net.minecraft.core.HolderLookup;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.SingleRecipeInput;
-import net.minecraft.world.level.Level;
 
 /**
  * Receita de um item para outro no pilão de pedra. Cada item de entrada gera um item de saída.
+ * Estende {@link AbstractCookingRecipe} para que o livro de receitas da fornalha reconheça a categoria.
  */
-public class MortarRecipe implements Recipe<SingleRecipeInput> {
-    private final Ingredient ingredient;
-    private final ItemStack result;
+public class MortarRecipe extends AbstractCookingRecipe {
+    public static final int DEFAULT_COOKING_TIME = 200;
 
-    public MortarRecipe(Ingredient ingredient, ItemStack result) {
-        this.ingredient = ingredient;
-        this.result = result;
+    public MortarRecipe(Ingredient ingredient, ItemStack result, int cookingTime, float experience) {
+        super(ModRecipes.MORTAR_TYPE.get(), "", CookingBookCategory.FOOD, ingredient, result, experience, cookingTime);
     }
 
     public Ingredient getIngredient() {
@@ -36,44 +34,23 @@ public class MortarRecipe implements Recipe<SingleRecipeInput> {
     }
 
     @Override
-    public boolean matches(SingleRecipeInput input, Level level) {
-        return ingredient.test(input.getItem(0));
-    }
-
-    @Override
-    public ItemStack assemble(SingleRecipeInput input, HolderLookup.Provider registries) {
-        return result.copy();
-    }
-
-    @Override
-    public boolean canCraftInDimensions(int width, int height) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getResultItem(HolderLookup.Provider registries) {
-        return result;
-    }
-
-    @Override
     public RecipeSerializer<MortarRecipe> getSerializer() {
         return ModRecipes.MORTAR_SERIALIZER.get();
-    }
-
-    @Override
-    public RecipeType<MortarRecipe> getType() {
-        return ModRecipes.MORTAR_TYPE.get();
     }
 
     public static final class Serializer implements RecipeSerializer<MortarRecipe> {
         private static final MapCodec<MortarRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(MortarRecipe::getIngredient),
-                ItemStack.STRICT_CODEC.fieldOf("result").forGetter(MortarRecipe::getResult)
+                ItemStack.STRICT_CODEC.fieldOf("result").forGetter(MortarRecipe::getResult),
+                Codec.INT.optionalFieldOf("cookingtime", DEFAULT_COOKING_TIME).forGetter(MortarRecipe::getCookingTime),
+                Codec.FLOAT.optionalFieldOf("experience", 0.0F).forGetter(MortarRecipe::getExperience)
         ).apply(instance, MortarRecipe::new));
 
         private static final StreamCodec<RegistryFriendlyByteBuf, MortarRecipe> STREAM_CODEC = StreamCodec.composite(
                 Ingredient.CONTENTS_STREAM_CODEC, MortarRecipe::getIngredient,
                 ItemStack.STREAM_CODEC, MortarRecipe::getResult,
+                ByteBufCodecs.VAR_INT, MortarRecipe::getCookingTime,
+                ByteBufCodecs.FLOAT, MortarRecipe::getExperience,
                 MortarRecipe::new
         );
 

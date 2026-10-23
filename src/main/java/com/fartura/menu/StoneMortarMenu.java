@@ -1,20 +1,25 @@
 package com.fartura.menu;
 
 import com.fartura.block.entity.StoneMortarBlockEntity;
+import com.fartura.recipe.MortarRecipe;
 import com.fartura.registry.ModMenus;
 
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.StackedContents;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.RecipeBookMenu;
+import net.minecraft.world.inventory.RecipeBookType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
 
-public class StoneMortarMenu extends AbstractContainerMenu {
+public class StoneMortarMenu extends RecipeBookMenu<SingleRecipeInput, MortarRecipe> {
     private static final int PLAYER_INV_Y = 84;
     private static final int HOTBAR_Y = 142;
 
@@ -36,7 +41,7 @@ public class StoneMortarMenu extends AbstractContainerMenu {
         this.inventory = inventory;
         this.data = data;
 
-        addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.INPUT_SLOT, 56, 35));
+        addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.INPUT_SLOT, 56, 17));
         addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.OUTPUT_SLOT, 116, 35) {
             @Override
             public boolean mayPlace(ItemStack stack) {
@@ -66,6 +71,51 @@ public class StoneMortarMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player player) {
         return true;
+    }
+
+    @Override
+    public void fillCraftSlotsStackedContents(StackedContents contents) {
+        contents.accountStack(inventory.getStackInSlot(StoneMortarBlockEntity.INPUT_SLOT));
+    }
+
+    @Override
+    public void clearCraftingContent() {
+        inventory.setStackInSlot(StoneMortarBlockEntity.INPUT_SLOT, ItemStack.EMPTY);
+    }
+
+    @Override
+    public boolean recipeMatches(RecipeHolder<MortarRecipe> recipe) {
+        return recipe.value().getIngredient().test(inventory.getStackInSlot(StoneMortarBlockEntity.INPUT_SLOT));
+    }
+
+    @Override
+    public int getResultSlotIndex() {
+        return StoneMortarBlockEntity.OUTPUT_SLOT;
+    }
+
+    @Override
+    public int getGridWidth() {
+        return 1;
+    }
+
+    @Override
+    public int getGridHeight() {
+        return 1;
+    }
+
+    @Override
+    public int getSize() {
+        return 2;
+    }
+
+    @Override
+    public RecipeBookType getRecipeBookType() {
+        return RecipeBookType.FURNACE;
+    }
+
+    @Override
+    public boolean shouldMoveToInventory(int index) {
+        return index != getResultSlotIndex();
     }
 
     @Override
