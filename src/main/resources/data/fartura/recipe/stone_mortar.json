@@ -6,7 +6,9 @@
     "SSS"
   ],
   "key": {
-    "S": "minecraft:smooth_stone"
+    "S": {
+      "item": "minecraft:smooth_stone"
+    }
   },
   "result": {
     "id": "fartura:stone_mortar",
