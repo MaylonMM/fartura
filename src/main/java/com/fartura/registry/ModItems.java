@@ -14,8 +14,8 @@ public final class ModItems {
 
     public static final DeferredItem<Item> CORN = ITEMS.registerSimpleItem("corn",
             new Item.Properties().food(new FoodProperties.Builder()
-                    .nutrition(3)
-                    .saturationModifier(0.4f)
+                    .nutrition(1)
+                    .saturationModifier(0.1f)
                     .build()));
 
     // Named after the lower plant block so the item's name comes from its own translation key.

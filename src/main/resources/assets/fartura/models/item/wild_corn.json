@@ -1,3 +1,6 @@
 {
-  "parent": "fartura:block/wild_corn"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fartura:item/wild_corn"
+  }
 }
