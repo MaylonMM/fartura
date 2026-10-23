@@ -29,7 +29,7 @@ import java.util.Optional;
 public class StoneMortarBlockEntity extends BlockEntity implements MenuProvider {
     public static final int INPUT_SLOT = 0;
     public static final int OUTPUT_SLOT = 1;
-    public static final int PROCESSING_TIME = 40;
+    public static final int PROCESSING_TIME = 200;
 
     private final ItemStackHandler inventory = new ItemStackHandler(2) {
         @Override

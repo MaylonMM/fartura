@@ -25,7 +25,7 @@ public class StoneMortarBlock extends BaseEntityBlock {
     public static final MapCodec<StoneMortarBlock> CODEC = simpleCodec(StoneMortarBlock::new);
 
     // Pilão menor que um bloco, como o real: base e tigela ocupam pouco espaço.
-    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 7, 13);
+    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 10, 13);
 
     public StoneMortarBlock(BlockBehaviour.Properties properties) {
         super(properties);

@@ -37,7 +37,6 @@ public final class ModBlocks {
     public static final DeferredBlock<StoneMortarBlock> STONE_MORTAR = BLOCKS.register("stone_mortar",
             () -> new StoneMortarBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops()
                     .strength(2.0f, 6.0f)
                     .sound(SoundType.STONE)
                     .noOcclusion()));
