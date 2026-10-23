@@ -12,6 +12,8 @@ import net.minecraft.world.entity.player.Inventory;
 public class StoneMortarScreen extends AbstractContainerScreen<StoneMortarMenu> {
     private static final ResourceLocation TEXTURE =
             ResourceLocation.fromNamespaceAndPath(Fartura.MODID, "textures/gui/stone_mortar.png");
+    private static final ResourceLocation BURN_PROGRESS_SPRITE =
+            ResourceLocation.withDefaultNamespace("container/furnace/burn_progress");
 
     public StoneMortarScreen(StoneMortarMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
@@ -41,7 +43,9 @@ public class StoneMortarScreen extends AbstractContainerScreen<StoneMortarMenu> 
 
         int progress = menu.getScaledProgress();
         if (progress > 0) {
-            guiGraphics.blit(TEXTURE, x + 79, y + 34, 176, 0, progress, 17);
+            guiGraphics.enableScissor(x + 79, y + 34, x + 79 + progress, y + 34 + 16);
+            guiGraphics.blitSprite(BURN_PROGRESS_SPRITE, x + 79, y + 34, 24, 16);
+            guiGraphics.disableScissor();
         }
     }
 }
