@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "AMA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "tag": "c:strawberries"
+    }
+  },
+  "result": {
+    "id": "fartura:candied_strawberry",
+    "count": 1
+  }
+}

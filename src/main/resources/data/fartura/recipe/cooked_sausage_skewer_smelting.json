@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "fartura:raw_sausage_skewer"
+  },
+  "result": {
+    "id": "fartura:cooked_sausage_skewer",
+    "count": 1
+  }
+}

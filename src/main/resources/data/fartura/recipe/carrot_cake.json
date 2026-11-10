@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    "CLC",
+    "OAO",
+    "FFF"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "id": "fartura:carrot_cake",
+    "count": 1
+  }
+}

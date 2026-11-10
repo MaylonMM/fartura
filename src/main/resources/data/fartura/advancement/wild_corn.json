@@ -1,0 +1,37 @@
+{
+  "parent": "fartura:root",
+  "criteria": {
+    "has_wild_corn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:wild_corn"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:wild_corn"
+    },
+    "title": {
+      "translate": "advancements.fartura.wild_corn.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.wild_corn.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "has_wild_corn"
+    ]
+  ]
+}

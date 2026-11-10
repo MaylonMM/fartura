@@ -1,0 +1,38 @@
+{
+  "parent": "fartura:stone_mortar",
+  "criteria": {
+    "has_barbecue_grill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:barbecue_grill",
+              "fartura:barbecue_grill_floor"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:barbecue_grill"
+    },
+    "title": {
+      "translate": "advancements.fartura.barbecue_grill.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.barbecue_grill.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "has_barbecue_grill"
+    ]
+  ]
+}

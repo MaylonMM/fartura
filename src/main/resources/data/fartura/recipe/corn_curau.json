@@ -1,0 +1,22 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "FF",
+    "AL"
+  ],
+  "key": {
+    "F": {
+      "item": "fartura:corn_flour"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "L": {
+      "tag": "c:milk"
+    }
+  },
+  "result": {
+    "id": "fartura:corn_curau",
+    "count": 1
+  }
+}

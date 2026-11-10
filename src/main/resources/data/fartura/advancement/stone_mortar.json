@@ -1,0 +1,37 @@
+{
+  "parent": "fartura:root",
+  "criteria": {
+    "has_stone_mortar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:stone_mortar"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:stone_mortar"
+    },
+    "title": {
+      "translate": "advancements.fartura.stone_mortar.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.stone_mortar.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "has_stone_mortar"
+    ]
+  ]
+}

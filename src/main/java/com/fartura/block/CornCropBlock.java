@@ -65,6 +65,7 @@ public class CornCropBlock extends BushBlock implements BonemealableBlock {
         }
         if (!level.isClientSide) {
             popResource(level, pos, new ItemStack(ModItems.CORN.get(), 1 + level.random.nextInt(3)));
+            popResource(level, pos, new ItemStack(ModItems.GREEN_CORN_HUSK.get()));
             level.setBlock(pos, state.setValue(AGE, 0), 2);
         }
         return InteractionResult.SUCCESS;

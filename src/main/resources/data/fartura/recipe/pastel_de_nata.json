@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "OAL",
+    "MMM"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    }
+  },
+  "result": {
+    "id": "fartura:pastel_de_nata",
+    "count": 2
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "AMA",
+    " A "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "id": "fartura:candied_apple",
+    "count": 1
+  }
+}

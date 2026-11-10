@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fartura:wild_tomato"
+    }
+  ],
+  "result": {
+    "id": "fartura:tomato_seeds",
+    "count": 1
+  }
+}

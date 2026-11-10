@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:campfires",
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "fartura:barbecue_grill",
+    "fartura:barbecue_grill_floor",
+    "farmersdelight:stove",
+    "farm_and_charm:stove"
+  ]
+}

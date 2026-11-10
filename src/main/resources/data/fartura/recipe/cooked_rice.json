@@ -1,0 +1,24 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "AW"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rice"
+    },
+    "W": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:cooked_rice",
+    "count": 1
+  }
+}

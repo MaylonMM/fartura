@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    "LS"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:milk"
+    },
+    "S": {
+      "tag": "c:salt"
+    }
+  },
+  "result": {
+    "id": "fartura:cheese",
+    "count": 1
+  }
+}

@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "fartura:stone_mortar"
+    "fartura:stone_mortar",
+    "fartura:barbecue_grill",
+    "fartura:barbecue_grill_floor",
+    "fartura:corn_cake",
+    "fartura:carrot_cake",
+    "fartura:iron_frying_pan"
   ]
 }

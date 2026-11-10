@@ -12,6 +12,15 @@
     },
     {
       "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fartura:green_corn_husk"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
       "conditions": [
         {
           "condition": "minecraft:block_state_property",

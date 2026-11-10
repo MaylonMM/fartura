@@ -1,7 +1,10 @@
 package com.fartura.registry;
 
 import com.fartura.Fartura;
+import com.fartura.recipe.FrigideiraRecipe;
+import com.fartura.recipe.KettleRecipe;
 import com.fartura.recipe.MortarRecipe;
+import com.fartura.recipe.PanelaRecipe;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -26,6 +29,39 @@ public final class ModRecipes {
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<MortarRecipe>> MORTAR_SERIALIZER =
             RECIPE_SERIALIZERS.register("mortar", MortarRecipe.Serializer::new);
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<PanelaRecipe>> PANELA_TYPE =
+            RECIPE_TYPES.register("panela", () -> new RecipeType<PanelaRecipe>() {
+                @Override
+                public String toString() {
+                    return Fartura.MODID + ":panela";
+                }
+            });
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PanelaRecipe>> PANELA_SERIALIZER =
+            RECIPE_SERIALIZERS.register("panela", PanelaRecipe.Serializer::new);
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<PanelaRecipe>> KETTLE_TYPE =
+            RECIPE_TYPES.register("kettle", () -> new RecipeType<PanelaRecipe>() {
+                @Override
+                public String toString() {
+                    return Fartura.MODID + ":kettle";
+                }
+            });
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PanelaRecipe>> KETTLE_SERIALIZER =
+            RECIPE_SERIALIZERS.register("kettle", KettleRecipe.Serializer::new);
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<FrigideiraRecipe>> FRIGIDEIRA_TYPE =
+            RECIPE_TYPES.register("frigideira", () -> new RecipeType<FrigideiraRecipe>() {
+                @Override
+                public String toString() {
+                    return Fartura.MODID + ":frigideira";
+                }
+            });
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<FrigideiraRecipe>> FRIGIDEIRA_SERIALIZER =
+            RECIPE_SERIALIZERS.register("frigideira", FrigideiraRecipe.Serializer::new);
 
     private ModRecipes() {
     }

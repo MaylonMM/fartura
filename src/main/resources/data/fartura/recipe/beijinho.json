@@ -1,0 +1,25 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "LC",
+    "AP"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:milk"
+    },
+    "C": {
+      "item": "fartura:coconut"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "fartura:beijinho",
+    "count": 4
+  }
+}

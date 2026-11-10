@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "fartura:block/coconut_water"
+    },
+    "level=2": {
+      "model": "fartura:block/coconut_water"
+    }
+  }
+}

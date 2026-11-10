@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "FFF"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:iron_nugget"
+    },
+    "F": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "fartura:iron_frying_pan",
+    "count": 1
+  }
+}

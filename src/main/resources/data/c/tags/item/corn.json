@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "fartura:corn",
-    "fartura:corn_kernels",
     "#c:crops/corn",
     "#c:seeds/corn"
   ]

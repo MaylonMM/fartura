@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    " L ",
+    "OAO",
+    "FFF"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:milk"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "item": "fartura:corn_flour"
+    }
+  },
+  "result": {
+    "id": "fartura:corn_cake",
+    "count": 1
+  }
+}

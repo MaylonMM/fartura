@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    "CE",
+    "EC"
+  ],
+  "key": {
+    "C": {
+      "item": "fartura:raw_sausage"
+    },
+    "E": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "fartura:raw_sausage_skewer",
+    "count": 1
+  }
+}

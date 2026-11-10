@@ -1,0 +1,26 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "LC",
+    "AP"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:milk"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "fartura:brigadeiro",
+    "count": 4
+  },
+  "cookingtime": 200
+}

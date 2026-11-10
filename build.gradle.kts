@@ -22,6 +22,7 @@ val neo_version: String by project
 val neo_version_range: String by project
 val loader_version_range: String by project
 val jei_version: String by project
+val jade_version: String by project
 
 if (project == rootProject) {
     // Use Wrapper.DistributionType.ALL para baixar as fontes do Gradle (documentação no IntelliJ).
@@ -36,6 +37,7 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven("https://maven.blamejared.com")
+    maven("https://api.modrinth.com/maven")
 }
 
 base {
@@ -106,6 +108,7 @@ dependencies {
     // Specify the version of Minecraft to use via NeoForge.
     implementation("net.neoforged:neoforge:$neo_version")
     compileOnly("mezz.jei:jei-$minecraft_version-neoforge-api:$jei_version")
+    compileOnly("maven.modrinth:nvQzSEkH:$jade_version")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "count=1": {"model": "fartura:block/brigadeiro_1"},
+    "count=2": {"model": "fartura:block/brigadeiro_2"},
+    "count=3": {"model": "fartura:block/brigadeiro_3"},
+    "count=4": {"model": "fartura:block/brigadeiro_4"}
+  }
+}

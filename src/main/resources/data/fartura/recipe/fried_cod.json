@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:cod"
+  },
+  "result": {
+    "id": "minecraft:cooked_cod",
+    "count": 1
+  },
+  "cookingtime": 400
+}

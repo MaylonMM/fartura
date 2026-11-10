@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "CC ",
+    "MM "
+  ],
+  "key": {
+    "M": {
+      "item": "fartura:wheat_dough"
+    },
+    "C": {
+      "tag": "c:cheeses"
+    }
+  },
+  "result": {
+    "id": "fartura:cheese_pastel",
+    "count": 1
+  }
+}

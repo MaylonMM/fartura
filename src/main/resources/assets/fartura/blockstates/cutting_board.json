@@ -1,0 +1,1 @@
+﻿{"variants":{"facing=north":{"model":"fartura:block/cutting_board"},"facing=east":{"model":"fartura:block/cutting_board","y":90},"facing=south":{"model":"fartura:block/cutting_board","y":180},"facing=west":{"model":"fartura:block/cutting_board","y":270}}}

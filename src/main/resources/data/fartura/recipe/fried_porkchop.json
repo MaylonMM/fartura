@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:porkchop"
+  },
+  "result": {
+    "id": "minecraft:cooked_porkchop",
+    "count": 1
+  },
+  "cookingtime": 400
+}

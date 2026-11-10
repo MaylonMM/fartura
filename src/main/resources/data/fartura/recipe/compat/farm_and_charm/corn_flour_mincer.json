@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farm_and_charm"
+    }
+  ],
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "item": "fartura:corn_kernels"
+  },
+  "recipe_type": "STONE",
+  "result": {
+    "id": "fartura:corn_flour",
+    "count": 1
+  }
+}

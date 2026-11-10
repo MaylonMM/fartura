@@ -1,0 +1,33 @@
+{
+  "ambientocclusion": true,
+  "textures": {
+    "beijinho": "fartura:block/beijinho",
+    "particle": "fartura:block/beijinho"
+  },
+  "elements": [
+    {
+      "from": [8.5, 0, 8.5],
+      "to": [11.5, 3, 11.5],
+      "faces": {
+        "north": {"uv": [6, 3, 9, 6], "texture": "#beijinho"},
+        "east": {"uv": [9, 3, 12, 6], "texture": "#beijinho"},
+        "south": {"uv": [0, 3, 3, 6], "texture": "#beijinho"},
+        "west": {"uv": [3, 3, 6, 6], "texture": "#beijinho"},
+        "up": {"uv": [3, 0, 6, 3], "texture": "#beijinho", "rotation": 270},
+        "down": {"uv": [3, 6, 6, 9], "texture": "#beijinho", "rotation": 90}
+      }
+    },
+    {
+      "from": [4.5, 0, 4.5],
+      "to": [7.5, 3, 7.5],
+      "faces": {
+        "north": {"uv": [3, 3, 6, 6], "texture": "#beijinho"},
+        "east": {"uv": [6, 3, 9, 6], "texture": "#beijinho"},
+        "south": {"uv": [9, 3, 12, 6], "texture": "#beijinho"},
+        "west": {"uv": [0, 3, 3, 6], "texture": "#beijinho"},
+        "up": {"uv": [3, 0, 6, 3], "texture": "#beijinho"},
+        "down": {"uv": [3, 6, 6, 9], "texture": "#beijinho"}
+      }
+    }
+  ]
+}

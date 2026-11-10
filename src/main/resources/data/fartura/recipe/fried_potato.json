@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:potato"
+  },
+  "result": {
+    "id": "fartura:fried_potato",
+    "count": 1
+  },
+  "cookingtime": 400
+}

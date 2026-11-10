@@ -1,0 +1,109 @@
+﻿{
+    "meta":  {
+                 "format_version":  "4.10",
+                 "model_format":  "free",
+                 "box_uv":  false
+             },
+    "name":  "coconut_leaves_2",
+    "resolution":  {
+                       "height":  16,
+                       "width":  16
+                   },
+    "elements":  [
+                     {
+                         "uuid":  "ed3c1fb6-1b06-418b-b67e-a90477f4da72",
+                         "origin":  [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                         "type":  "cube",
+                         "color":  0,
+                         "faces":  {
+                                       "south":  {
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                16,
+                                                                16
+                                                            ],
+                                                     "texture":  0
+                                                 },
+                                       "north":  {
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                16,
+                                                                16
+                                                            ],
+                                                     "texture":  0
+                                                 },
+                                       "up":  {
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             16,
+                                                             16
+                                                         ],
+                                                  "texture":  0
+                                              },
+                                       "west":  {
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               16,
+                                                               16
+                                                           ],
+                                                    "texture":  0
+                                                },
+                                       "down":  {
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               16,
+                                                               16
+                                                           ],
+                                                    "texture":  0
+                                                },
+                                       "east":  {
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               16,
+                                                               16
+                                                           ],
+                                                    "texture":  0
+                                                }
+                                   },
+                         "name":  "cube",
+                         "from":  [
+                                      -8,
+                                      0,
+                                      -8
+                                  ],
+                         "rotation":  [
+                                          0,
+                                          0,
+                                          0
+                                      ],
+                         "autouv":  0,
+                         "to":  [
+                                    8,
+                                    16,
+                                    8
+                                ]
+                     }
+                 ],
+    "textures":  [
+                     {
+                         "source":  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAADs3KXhyHDewl+3ubfAnieYmZi9myapiyKIh4dwbXD31QC3AAAAAXRSTlMAQObYZgAAAHtJREFUeNoNyLENwyAQQNFfIJRrs0JG8AIUiMSZwgU6Be+R/gqEjAewRKYM3dODIZfL74EOKRrlZFXUoFKVjnwcaeuDY2lsfjduS4DY6JYrrN95NSPP+zwXOV+PlLBAP5YS5FJWh17yq0S8L0giUwCLE/tGbI5gZ/Mp2R8RmSYmq9pxIAAAAABJRU5ErkJggg==",
+                         "height":  16,
+                         "id":  "0",
+                         "uv_height":  16,
+                         "width":  16,
+                         "name":  "coconut_leaves_2.png",
+                         "path":  "",
+                         "uv_width":  16
+                     }
+                 ]
+}

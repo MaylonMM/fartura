@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "fartura:raw_cheese_skewer"
+  },
+  "result": {
+    "id": "fartura:cooked_cheese_skewer",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "fartura:good_smell",
+  "criteria": {
+    "ate_candied_apple": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:candied_apple"
+    },
+    "title": {
+      "translate": "advancements.fartura.love_in_the_air.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.love_in_the_air.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "ate_candied_apple"
+    ]
+  ]
+}

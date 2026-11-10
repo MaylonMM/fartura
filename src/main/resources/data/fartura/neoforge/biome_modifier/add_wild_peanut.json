@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#fartura:wild_peanut_biomes",
+  "features": "fartura:wild_peanut",
+  "step": "vegetal_decoration"
+}

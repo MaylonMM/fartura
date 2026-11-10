@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#fartura:is_tropical",
+    "#minecraft:is_savanna",
+    "#minecraft:is_forest",
+    "minecraft:windswept_forest",
+    "minecraft:sparse_jungle",
+    "minecraft:meadow"
+  ]
+}

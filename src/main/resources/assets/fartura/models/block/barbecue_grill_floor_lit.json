@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:block/block",
+  "texture_size": [16, 16],
+  "textures": {
+    "particle": "fartura:block/barbecue_grill_floor_side",
+    "side": "fartura:block/barbecue_grill_floor_side",
+    "front": "fartura:block/barbecue_grill_floor_side",
+    "back": "fartura:block/barbecue_grill_floor_side",
+    "top": "fartura:block/barbecue_grill_floor_top_on",
+    "bottom": "fartura:block/barbecue_grill_floor_bottom"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 8, 16],
+      "faces": {
+        "down": { "texture": "#bottom", "cullface": "down" },
+        "up": { "texture": "#top", "cullface": "up" },
+        "north": { "texture": "#front", "cullface": "north" },
+        "south": { "texture": "#back", "cullface": "south" },
+        "west": { "texture": "#side", "cullface": "west" },
+        "east": { "texture": "#side", "cullface": "east" }
+      }
+    }
+  ]
+}

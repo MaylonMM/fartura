@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "fartura:block/corn_cake_side",
+        "bottom": "fartura:block/corn_cake_bottom",
+        "top": "fartura:block/corn_cake_top",
+        "side": "fartura:block/corn_cake_side",
+        "inside": "fartura:block/corn_cake_inner"
+    },
+    "elements": [
+        {   "from": [ 7, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

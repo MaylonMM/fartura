@@ -1,0 +1,35 @@
+{
+  "parent": "fartura:root",
+  "criteria": {
+    "ate_salt": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fartura:salt"
+          ]
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:salt"
+    },
+    "title": {
+      "translate": "advancements.fartura.salt_taste.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.salt_taste.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "ate_salt"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "has_corn_kernels": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:corn_kernels"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "fartura:corn_flour"
+    ]
+  }
+}

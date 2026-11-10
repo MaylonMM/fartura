@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:corn"
+    },
+    "title": {
+      "translate": "advancements.fartura.root.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.root.description"
+    },
+    "background": "fartura:textures/gui/advancements/backgrounds/grass.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

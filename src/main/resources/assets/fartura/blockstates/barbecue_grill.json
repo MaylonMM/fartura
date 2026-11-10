@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,lit=false": { "model": "fartura:block/barbecue_grill" },
+    "facing=east,lit=false": { "model": "fartura:block/barbecue_grill", "y": 90 },
+    "facing=south,lit=false": { "model": "fartura:block/barbecue_grill", "y": 180 },
+    "facing=west,lit=false": { "model": "fartura:block/barbecue_grill", "y": 270 },
+    "facing=north,lit=true": { "model": "fartura:block/barbecue_grill_lit" },
+    "facing=east,lit=true": { "model": "fartura:block/barbecue_grill_lit", "y": 90 },
+    "facing=south,lit=true": { "model": "fartura:block/barbecue_grill_lit", "y": 180 },
+    "facing=west,lit=true": { "model": "fartura:block/barbecue_grill_lit", "y": 270 }
+  }
+}

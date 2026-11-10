@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM",
+    "AA"
+  ],
+  "key": {
+    "M": {
+      "item": "fartura:peanut"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "id": "fartura:pacoca",
+    "count": 2
+  }
+}

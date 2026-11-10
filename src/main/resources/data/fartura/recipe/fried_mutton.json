@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:mutton"
+  },
+  "result": {
+    "id": "minecraft:cooked_mutton",
+    "count": 1
+  },
+  "cookingtime": 400
+}

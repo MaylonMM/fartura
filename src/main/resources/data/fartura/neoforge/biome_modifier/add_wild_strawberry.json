@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#fartura:wild_strawberry_biomes",
+  "features": "fartura:wild_strawberry",
+  "step": "vegetal_decoration"
+}

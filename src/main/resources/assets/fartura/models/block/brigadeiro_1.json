@@ -1,0 +1,21 @@
+{
+  "ambientocclusion": true,
+  "textures": {
+    "brigadeiro": "fartura:block/brigadeiro",
+    "particle": "fartura:block/brigadeiro"
+  },
+  "elements": [
+    {
+      "from": [6.5, 0, 6.5],
+      "to": [9.5, 3, 9.5],
+      "faces": {
+        "north": {"uv": [3, 3, 6, 6], "texture": "#brigadeiro"},
+        "east": {"uv": [6, 3, 9, 6], "texture": "#brigadeiro"},
+        "south": {"uv": [9, 3, 12, 6], "texture": "#brigadeiro"},
+        "west": {"uv": [0, 3, 3, 6], "texture": "#brigadeiro"},
+        "up": {"uv": [3, 0, 6, 3], "texture": "#brigadeiro"},
+        "down": {"uv": [3, 6, 6, 9], "texture": "#brigadeiro"}
+      }
+    }
+  ]
+}

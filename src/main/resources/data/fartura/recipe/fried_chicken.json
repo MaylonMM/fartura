@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:chicken"
+  },
+  "result": {
+    "id": "minecraft:cooked_chicken",
+    "count": 1
+  },
+  "cookingtime": 400
+}

@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "minecraft:rabbit"
+  },
+  "result": {
+    "id": "minecraft:cooked_rabbit",
+    "count": 1
+  },
+  "cookingtime": 400
+}

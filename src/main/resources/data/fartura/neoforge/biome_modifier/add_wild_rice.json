@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_river",
+  "features": "fartura:wild_rice",
+  "step": "vegetal_decoration"
+}

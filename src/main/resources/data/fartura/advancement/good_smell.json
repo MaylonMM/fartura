@@ -1,0 +1,28 @@
+{
+  "parent": "fartura:barbecue_grill",
+  "criteria": {
+    "took_from_pot": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:panela"
+    },
+    "title": {
+      "translate": "advancements.fartura.good_smell.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.good_smell.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "took_from_pot"
+    ]
+  ]
+}

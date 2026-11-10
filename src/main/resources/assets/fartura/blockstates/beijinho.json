@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "count=1": {"model": "fartura:block/beijinho_1"},
+    "count=2": {"model": "fartura:block/beijinho_2"},
+    "count=3": {"model": "fartura:block/beijinho_3"},
+    "count=4": {"model": "fartura:block/beijinho_4"}
+  }
+}

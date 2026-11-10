@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "fartura:raw_vegetable_skewer"
+  },
+  "result": {
+    "id": "fartura:cooked_vegetable_skewer",
+    "count": 1
+  }
+}

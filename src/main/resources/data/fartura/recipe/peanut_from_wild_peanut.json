@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fartura:wild_peanut"
+    }
+  ],
+  "result": {
+    "id": "fartura:peanut",
+    "count": 1
+  }
+}

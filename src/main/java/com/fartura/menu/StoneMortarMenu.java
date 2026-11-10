@@ -41,7 +41,7 @@ public class StoneMortarMenu extends RecipeBookMenu<SingleRecipeInput, MortarRec
         this.inventory = inventory;
         this.data = data;
 
-        addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.INPUT_SLOT, 56, 17));
+        addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.INPUT_SLOT, 56, 35));
         addSlot(new SlotItemHandler(inventory, StoneMortarBlockEntity.OUTPUT_SLOT, 116, 35) {
             @Override
             public boolean mayPlace(ItemStack stack) {

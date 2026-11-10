@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    " C ",
+    "TGC",
+    "GM "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "T": {
+      "tag": "c:tomatoes"
+    },
+    "G": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "minecraft:brown_mushroom"
+    }
+  },
+  "result": {
+    "id": "fartura:raw_vegetable_skewer",
+    "count": 1
+  }
+}

@@ -1,5 +1,6 @@
 package com.fartura.client.screen;
 
+import com.fartura.Fartura;
 import com.fartura.client.recipebook.StoneMortarRecipeBookComponent;
 import com.fartura.menu.StoneMortarMenu;
 
@@ -19,11 +20,10 @@ import net.minecraft.world.inventory.Slot;
  * botão do livro de receitas e comportamento do livro ao clicar na seta.
  */
 public class StoneMortarScreen extends AbstractContainerScreen<StoneMortarMenu> implements RecipeUpdateListener {
-    private static final ResourceLocation FURNACE_TEXTURE =
-            ResourceLocation.withDefaultNamespace("textures/gui/container/furnace.png");
+    private static final ResourceLocation TEXTURE =
+            ResourceLocation.fromNamespaceAndPath(Fartura.MODID, "textures/gui/stone_mortar.png");
     private static final ResourceLocation BURN_PROGRESS_SPRITE =
             ResourceLocation.withDefaultNamespace("container/furnace/burn_progress");
-    private static final int BACKGROUND_COLOR = 0xFFC6C6C6;
 
     private final StoneMortarRecipeBookComponent recipeBookComponent = new StoneMortarRecipeBookComponent();
     private boolean widthTooNarrow;
@@ -64,26 +64,22 @@ public class StoneMortarScreen extends AbstractContainerScreen<StoneMortarMenu> 
             this.renderBackground(guiGraphics, mouseX, mouseY, partialTick);
             this.recipeBookComponent.render(guiGraphics, mouseX, mouseY, partialTick);
         } else {
-            this.recipeBookComponent.render(guiGraphics, mouseX, mouseY, partialTick);
             super.render(guiGraphics, mouseX, mouseY, partialTick);
+            this.recipeBookComponent.render(guiGraphics, mouseX, mouseY, partialTick);
+            this.recipeBookComponent.renderGhostRecipe(guiGraphics, this.leftPos, this.topPos, true, partialTick);
         }
-        this.recipeBookComponent.renderGhostRecipe(guiGraphics, this.leftPos, this.topPos, true, partialTick);
         this.renderTooltip(guiGraphics, mouseX, mouseY);
         this.recipeBookComponent.renderTooltip(guiGraphics, this.leftPos, this.topPos, mouseX, mouseY);
     }
 
     @Override
     protected void renderBg(GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
-        guiGraphics.blit(FURNACE_TEXTURE, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight);
-
-        // O pilão não tem combustível: apaga os espaços de chama e de combustível da textura da fornalha.
-        guiGraphics.fill(this.leftPos + 56, this.topPos + 36, this.leftPos + 70, this.topPos + 50, BACKGROUND_COLOR);
-        guiGraphics.fill(this.leftPos + 55, this.topPos + 52, this.leftPos + 73, this.topPos + 70, BACKGROUND_COLOR);
+        guiGraphics.blit(TEXTURE, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight);
 
         int progress = this.menu.getScaledProgress();
         if (progress > 0) {
             guiGraphics.blitSprite(BURN_PROGRESS_SPRITE, 24, 16, 0, 0,
-                    this.leftPos + 79, this.topPos + 34, progress, 16);
+                    this.leftPos + 79, this.topPos + 35, progress, 16);
         }
     }
 

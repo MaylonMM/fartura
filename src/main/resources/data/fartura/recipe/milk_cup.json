@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FLF",
+    " F "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:glass_bottle"
+    },
+    "L": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "id": "fartura:milk_cup",
+    "count": 3
+  }
+}

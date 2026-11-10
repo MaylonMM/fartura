@@ -1,0 +1,28 @@
+{
+  "parent": "fartura:salt_taste",
+  "criteria": {
+    "hit_someone": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:coconut"
+    },
+    "title": {
+      "translate": "advancements.fartura.hard_head.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.hard_head.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "hit_someone"
+    ]
+  ]
+}

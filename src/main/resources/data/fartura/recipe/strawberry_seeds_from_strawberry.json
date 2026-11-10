@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fartura:strawberry"
+    }
+  ],
+  "result": {
+    "id": "fartura:strawberry_seeds",
+    "count": 1
+  }
+}
