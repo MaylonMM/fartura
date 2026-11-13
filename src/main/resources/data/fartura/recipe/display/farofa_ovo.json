@@ -1,0 +1,19 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "OO",
+    "FF"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "tag": "c:flours"
+    }
+  },
+  "result": {
+    "id": "fartura:farofa_ovo",
+    "count": 1
+  }
+}

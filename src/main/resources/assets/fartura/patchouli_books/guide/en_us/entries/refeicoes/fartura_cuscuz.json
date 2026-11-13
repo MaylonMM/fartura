@@ -5,10 +5,10 @@
   "sortnum": 5,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:cuscuz",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/cuscuz",
       "title": "Cuscuz",
-      "text": "Made in the pot with corn flour, salt and water."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

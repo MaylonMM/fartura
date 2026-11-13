@@ -5,10 +5,10 @@
   "sortnum": 9,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:feijoada",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/feijoada",
       "title": "Feijoada",
-      "text": "Made in the pot with dried beef, cooked sausage, cooked pork, beans, rice and flours."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

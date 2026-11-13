@@ -1,0 +1,28 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "FLT",
+    "AAB"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:chicken"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "T": {
+      "tag": "c:tomatoes"
+    },
+    "A": {
+      "tag": "c:rice"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "id": "fartura:chicken_stroganoff",
+    "count": 1
+  }
+}

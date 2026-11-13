@@ -5,10 +5,10 @@
   "sortnum": 16,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:beef_pasta",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/beef_pasta",
       "title": "Macarrão com Carne Moída",
-      "text": "Feito na panela com tomate, carne moída e massa de trigo."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

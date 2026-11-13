@@ -1,0 +1,31 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "CLP",
+    "FAT"
+  ],
+  "key": {
+    "C": {
+      "item": "fartura:dried_beef"
+    },
+    "L": {
+      "item": "fartura:cooked_sausage"
+    },
+    "P": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "F": {
+      "item": "fartura:bean"
+    },
+    "A": {
+      "item": "fartura:rice"
+    },
+    "T": {
+      "tag": "c:flours"
+    }
+  },
+  "result": {
+    "id": "fartura:feijoada",
+    "count": 1
+  }
+}

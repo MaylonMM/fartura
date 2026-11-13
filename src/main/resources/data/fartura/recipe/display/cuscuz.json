@@ -1,0 +1,28 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "FF",
+    "SA"
+  ],
+  "key": {
+    "F": {
+      "item": "fartura:corn_flour"
+    },
+    "S": {
+      "tag": "c:salt"
+    },
+    "A": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:cuscuz",
+    "count": 1
+  }
+}

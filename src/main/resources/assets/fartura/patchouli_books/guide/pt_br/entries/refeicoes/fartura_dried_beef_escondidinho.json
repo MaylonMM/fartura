@@ -5,10 +5,10 @@
   "sortnum": 10,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:dried_beef_escondidinho",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/dried_beef_escondidinho",
       "title": "Escondidinho de Carne Seca",
-      "text": "Feito na panela com queijo, mandioca e carne seca."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

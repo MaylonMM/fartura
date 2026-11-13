@@ -5,10 +5,10 @@
   "sortnum": 18,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:chicken_noodles",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/chicken_noodles",
       "title": "Noodles de Galinha Caipira",
-      "text": "Feito na panela com frango cozido, cenoura, massa de trigo e água."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

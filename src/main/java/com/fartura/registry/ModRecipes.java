@@ -4,6 +4,7 @@ import com.fartura.Fartura;
 import com.fartura.recipe.FrigideiraRecipe;
 import com.fartura.recipe.KettleRecipe;
 import com.fartura.recipe.MortarRecipe;
+import com.fartura.recipe.PanelaDisplayRecipe;
 import com.fartura.recipe.PanelaRecipe;
 
 import net.minecraft.core.registries.Registries;
@@ -40,6 +41,9 @@ public final class ModRecipes {
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PanelaRecipe>> PANELA_SERIALIZER =
             RECIPE_SERIALIZERS.register("panela", PanelaRecipe.Serializer::new);
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PanelaDisplayRecipe>> PANELA_DISPLAY_SERIALIZER =
+            RECIPE_SERIALIZERS.register("panela_display", PanelaDisplayRecipe.Serializer::new);
 
     public static final DeferredHolder<RecipeType<?>, RecipeType<PanelaRecipe>> KETTLE_TYPE =
             RECIPE_TYPES.register("kettle", () -> new RecipeType<PanelaRecipe>() {

@@ -5,10 +5,10 @@
   "sortnum": 12,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:farofa_bacon",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/farofa_bacon",
       "title": "Farofa de Bacon e Linguiça",
-      "text": "Feita na panela com porco cozido, linguiça assada e farinhas."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

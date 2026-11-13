@@ -5,10 +5,10 @@
   "sortnum": 1,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:cooked_rice",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/cooked_rice",
       "title": "Arroz Cozido",
-      "text": "Feito na panela com arroz e água."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

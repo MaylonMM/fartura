@@ -5,10 +5,10 @@
   "sortnum": 21,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:prato_feito",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/prato_feito",
       "title": "Rice, Beans, Steak and Fries",
-      "text": "Made in the pot with cooked meat, fried potato, rice and beans."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

@@ -14,11 +14,13 @@ import mezz.jei.api.constants.RecipeTypes;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
+import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
+import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.RecipeHolder;
 
 import java.util.List;
@@ -93,6 +95,20 @@ public class FarturaJeiPlugin implements IModPlugin {
                 new CuttingBoardRecipe(new ItemStack(Items.BEEF),
                         knives,
                         new ItemStack(ModItems.MINCED_BEEF.get()))));
+    }
+
+    @Override
+    public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
+        if (Minecraft.getInstance().level == null) {
+            return;
+        }
+        // Receitas de exibicao do guia (Panela de Barro) nao devem aparecer como receitas de bancada no JEI.
+        List<RecipeHolder<CraftingRecipe>> displayRecipes = Minecraft.getInstance().level.getRecipeManager()
+                .getAllRecipesFor(net.minecraft.world.item.crafting.RecipeType.CRAFTING).stream()
+                .filter(holder -> holder.id().getNamespace().equals(Fartura.MODID)
+                        && holder.id().getPath().startsWith("display/"))
+                .toList();
+        jeiRuntime.getRecipeManager().hideRecipes(RecipeTypes.CRAFTING, displayRecipes);
     }
 
     @Override

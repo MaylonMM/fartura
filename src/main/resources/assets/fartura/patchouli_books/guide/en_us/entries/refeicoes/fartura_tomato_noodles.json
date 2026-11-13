@@ -5,10 +5,10 @@
   "sortnum": 23,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:tomato_noodles",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/tomato_noodles",
       "title": "Tomato Noodles",
-      "text": "Made in the pot with tomato, wheat dough and water."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

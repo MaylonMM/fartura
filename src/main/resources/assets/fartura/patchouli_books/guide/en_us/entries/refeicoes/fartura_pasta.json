@@ -5,10 +5,10 @@
   "sortnum": 20,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:pasta",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/pasta",
       "title": "Pasta",
-      "text": "Made in the pot with tomato and wheat dough."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

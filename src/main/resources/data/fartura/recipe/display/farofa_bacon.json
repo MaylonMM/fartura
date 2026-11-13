@@ -1,0 +1,22 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "BS",
+    "FF"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "S": {
+      "item": "fartura:cooked_sausage"
+    },
+    "F": {
+      "tag": "c:flours"
+    }
+  },
+  "result": {
+    "id": "fartura:farofa_bacon",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "TTC",
+    "MMC"
+  ],
+  "key": {
+    "T": {
+      "tag": "c:tomatoes"
+    },
+    "C": {
+      "item": "fartura:minced_beef"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    }
+  },
+  "result": {
+    "id": "fartura:beef_pasta",
+    "count": 1
+  }
+}

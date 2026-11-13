@@ -5,10 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:prato_feito",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/prato_feito",
       "title": "Arroz, Feijão, Bife e Fritas",
-      "text": "Feito na panela com carne cozida, batata frita, arroz e feijão."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }

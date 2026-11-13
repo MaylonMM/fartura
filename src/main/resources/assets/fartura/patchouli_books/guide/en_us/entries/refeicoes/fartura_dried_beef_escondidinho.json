@@ -5,10 +5,10 @@
   "sortnum": 7,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:dried_beef_escondidinho",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/dried_beef_escondidinho",
       "title": "Dried Beef Escondidinho",
-      "text": "Made in the pot with cheese, cassava and dried beef."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

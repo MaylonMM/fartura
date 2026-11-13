@@ -5,10 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:beef_pasta",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/beef_pasta",
       "title": "Beef Pasta",
-      "text": "Made in the pot with tomato, ground beef and wheat dough."
+      "text": "Made in the Clay Pot with heat underneath."
     }
   ]
 }

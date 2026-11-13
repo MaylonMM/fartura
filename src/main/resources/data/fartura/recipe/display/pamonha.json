@@ -1,0 +1,25 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "FF ",
+    "ALP"
+  ],
+  "key": {
+    "F": {
+      "item": "fartura:corn_flour"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "P": {
+      "item": "fartura:green_corn_husk"
+    }
+  },
+  "result": {
+    "id": "fartura:pamonha",
+    "count": 1
+  }
+}

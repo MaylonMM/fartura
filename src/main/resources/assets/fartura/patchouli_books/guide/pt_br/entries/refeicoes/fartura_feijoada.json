@@ -5,10 +5,10 @@
   "sortnum": 14,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:feijoada",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/feijoada",
       "title": "Feijoada",
-      "text": "Feita na panela com carne seca, linguiça, porco cozido, feijão, arroz e farinhas."
+      "text": "Feito na Panela de Barro com calor embaixo."
     }
   ]
 }
