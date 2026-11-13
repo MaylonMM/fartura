@@ -1,0 +1,14 @@
+{
+  "name": "Hot Chocolate",
+  "category": "fartura:bebidas_quentes",
+  "icon": "fartura:hot_chocolate",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:hot_chocolate",
+      "title": "Hot Chocolate",
+      "text": "Made in the Kettle with Cocoa, Milk and a Glass Bottle."
+    }
+  ]
+}

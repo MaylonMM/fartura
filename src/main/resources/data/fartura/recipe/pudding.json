@@ -1,0 +1,22 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "OA",
+    "LL"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "L": {
+      "tag": "c:milk"
+    }
+  },
+  "result": {
+    "id": "fartura:pudding",
+    "count": 1
+  }
+}

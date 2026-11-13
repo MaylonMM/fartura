@@ -1,0 +1,14 @@
+{
+  "name": "Coffee",
+  "category": "fartura:bebidas_quentes",
+  "icon": "fartura:coffee",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:coffee",
+      "title": "Coffee",
+      "text": "Made in the Kettle with Coffee Beans and a Water Bottle (potion)."
+    }
+  ]
+}

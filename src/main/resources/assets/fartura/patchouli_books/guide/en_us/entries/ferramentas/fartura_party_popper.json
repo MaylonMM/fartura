@@ -1,0 +1,12 @@
+{
+  "name": "Party Popper",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:party_popper",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:party_popper"
+    }
+  ]
+}

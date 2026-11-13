@@ -1,0 +1,12 @@
+{
+  "name": "Redstone Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:redstone_knife",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:redstone_knife"
+    }
+  ]
+}

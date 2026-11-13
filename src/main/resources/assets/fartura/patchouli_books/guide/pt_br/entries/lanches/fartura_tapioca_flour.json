@@ -1,0 +1,14 @@
+{
+  "name": "Farinha de Tapioca",
+  "category": "fartura:lanches",
+  "icon": "fartura:tapioca_flour",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:tapioca_flour",
+      "title": "Farinha de Tapioca",
+      "text": "Feita na frigideira com farinha de mandioca."
+    }
+  ]
+}

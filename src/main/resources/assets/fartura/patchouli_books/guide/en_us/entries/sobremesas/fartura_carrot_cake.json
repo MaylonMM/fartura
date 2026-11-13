@@ -1,0 +1,12 @@
+{
+  "name": "Carrot Cake with Chocolate",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:carrot_cake",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:carrot_cake"
+    }
+  ]
+}

@@ -1,12 +1,20 @@
 {
   "variants": {
-    "age=0": { "model": "fartura:block/corn_crop_0" },
-    "age=1": { "model": "fartura:block/corn_crop_1" },
-    "age=2": { "model": "fartura:block/corn_crop_2" },
-    "age=3": { "model": "fartura:block/corn_crop_3" },
-    "age=4": { "model": "fartura:block/corn_crop_4" },
-    "age=5": { "model": "fartura:block/corn_crop_5" },
-    "age=6": { "model": "fartura:block/corn_crop_6" },
-    "age=7": { "model": "fartura:block/corn_crop_7" }
+    "age=0,half=lower": { "model": "fartura:block/corn_crop_0" },
+    "age=1,half=lower": { "model": "fartura:block/corn_crop_1" },
+    "age=2,half=lower": { "model": "fartura:block/corn_crop_2" },
+    "age=3,half=lower": { "model": "fartura:block/corn_crop_3" },
+    "age=4,half=lower": { "model": "fartura:block/corn_crop_4" },
+    "age=5,half=lower": { "model": "fartura:block/corn_crop_5" },
+    "age=6,half=lower": { "model": "fartura:block/corn_crop_6" },
+    "age=7,half=lower": { "model": "fartura:block/corn_crop_7" },
+    "age=0,half=upper": { "model": "fartura:block/corn_crop_0_upper" },
+    "age=1,half=upper": { "model": "fartura:block/corn_crop_1_upper" },
+    "age=2,half=upper": { "model": "fartura:block/corn_crop_2_upper" },
+    "age=3,half=upper": { "model": "fartura:block/corn_crop_3_upper" },
+    "age=4,half=upper": { "model": "fartura:block/corn_crop_4_upper" },
+    "age=5,half=upper": { "model": "fartura:block/corn_crop_5_upper" },
+    "age=6,half=upper": { "model": "fartura:block/corn_crop_6_upper" },
+    "age=7,half=upper": { "model": "fartura:block/corn_crop_7_upper" }
   }
 }

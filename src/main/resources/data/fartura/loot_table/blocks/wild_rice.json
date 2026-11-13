@@ -3,10 +3,19 @@
   "pools": [
     {
       "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "fartura:wild_rice",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fartura:arroz"
+          "name": "fartura:rice"
         }
       ]
     }

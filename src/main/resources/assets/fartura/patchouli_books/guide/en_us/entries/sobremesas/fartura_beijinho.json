@@ -1,0 +1,14 @@
+{
+  "name": "Beijinho",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:beijinho",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:beijinho",
+      "title": "Beijinho",
+      "text": "Made in the pot with condensed milk, coconut, sugar and paper."
+    }
+  ]
+}

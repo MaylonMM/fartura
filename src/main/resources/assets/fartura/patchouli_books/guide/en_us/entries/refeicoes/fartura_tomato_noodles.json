@@ -1,0 +1,14 @@
+{
+  "name": "Tomato Noodles",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:tomato_noodles",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:tomato_noodles",
+      "title": "Tomato Noodles",
+      "text": "Made in the pot with tomato, wheat dough and water."
+    }
+  ]
+}

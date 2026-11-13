@@ -1,0 +1,12 @@
+{
+  "name": "Sugarcane Juice",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:sugarcane_juice",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:sugarcane_juice"
+    }
+  ]
+}

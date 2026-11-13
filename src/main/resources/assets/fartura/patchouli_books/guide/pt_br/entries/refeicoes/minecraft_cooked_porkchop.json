@@ -1,0 +1,14 @@
+{
+  "name": "Porco Frito",
+  "category": "fartura:refeicoes",
+  "icon": "minecraft:cooked_porkchop",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:cooked_porkchop",
+      "title": "Porco Frito",
+      "text": "Feito na frigideira com costela de porco crua."
+    }
+  ]
+}

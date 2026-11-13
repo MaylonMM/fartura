@@ -1,0 +1,14 @@
+{
+  "name": "Batata Frita",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:fried_potato",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:fried_potato",
+      "title": "Batata Frita",
+      "text": "Feita na frigideira com batata."
+    }
+  ]
+}

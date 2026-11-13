@@ -1,0 +1,14 @@
+{
+  "name": "Corn Flour",
+  "category": "fartura:lanches",
+  "icon": "fartura:corn_flour",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:corn_flour",
+      "title": "Corn Flour",
+      "text": "Made in the mortar with corn kernels."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Raw Vegetable Skewer",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_vegetable_skewer",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_vegetable_skewer"
+    }
+  ]
+}

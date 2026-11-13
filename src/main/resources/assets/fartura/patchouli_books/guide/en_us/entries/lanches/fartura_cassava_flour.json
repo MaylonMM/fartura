@@ -1,0 +1,14 @@
+{
+  "name": "Cassava Flour",
+  "category": "fartura:lanches",
+  "icon": "fartura:cassava_flour",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cassava_flour",
+      "title": "Cassava Flour",
+      "text": "Made in the mortar with cassava."
+    }
+  ]
+}

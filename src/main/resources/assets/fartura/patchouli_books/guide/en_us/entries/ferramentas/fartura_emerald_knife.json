@@ -1,0 +1,12 @@
+{
+  "name": "Emerald Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:emerald_knife",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:emerald_knife"
+    }
+  ]
+}

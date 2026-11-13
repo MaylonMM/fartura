@@ -1,0 +1,12 @@
+{
+  "name": "Pastel de Nata",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:pastel_de_nata",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:pastel_de_nata"
+    }
+  ]
+}

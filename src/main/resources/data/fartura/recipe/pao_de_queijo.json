@@ -1,0 +1,25 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "QO",
+    "LF"
+  ],
+  "key": {
+    "Q": {
+      "tag": "c:cheeses"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "F": {
+      "item": "fartura:tapioca_flour"
+    }
+  },
+  "result": {
+    "id": "fartura:pao_de_queijo",
+    "count": 4
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Fried Beef",
+  "category": "fartura:refeicoes",
+  "icon": "minecraft:cooked_beef",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:cooked_beef",
+      "title": "Fried Beef",
+      "text": "Made in the frying pan with raw beef."
+    }
+  ]
+}

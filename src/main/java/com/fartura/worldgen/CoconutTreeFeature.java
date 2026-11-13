@@ -1,6 +1,6 @@
 package com.fartura.worldgen;
 
-import com.fartura.block.CoconutLeavesBlock;
+import com.fartura.block.CoconutPodBlock;
 import com.fartura.registry.ModBlocks;
 
 import com.mojang.serialization.Codec;
@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -27,7 +28,7 @@ import java.util.Set;
 
 /**
  * Coconut palm: a slightly crooked jungle log trunk with a mangrove leaf canopy.
- * Some canopy tips are coconut leaves. Needs sand or dirt below.
+ * Green coconuts (CoconutPodBlock) hang on the lowest trunk logs under the canopy. Needs sand or dirt below.
  */
 public class CoconutTreeFeature extends Feature<NoneFeatureConfiguration> {
     public CoconutTreeFeature(Codec<NoneFeatureConfiguration> codec) {
@@ -79,7 +80,41 @@ public class CoconutTreeFeature extends Feature<NoneFeatureConfiguration> {
         }
         placeMangroveLeaf(level, crown.above());
         updateLeafDistances(level, trunk, crown);
+        placePods(level, trunk, crown, random);
         return true;
+    }
+
+    /**
+     * Hangs coconut pods on the lowest trunk log in the canopy zone that has a free side, like vanilla cocoa.
+     * Each free side gets a pod with a 75% chance. Only that one log is used, so the pods stay near the crown.
+     */
+    private static void placePods(LevelAccessor level, List<BlockPos> trunk, BlockPos crown, RandomSource random) {
+        List<BlockPos> logs = new ArrayList<>();
+        for (BlockPos log : trunk) {
+            if (log.getY() >= crown.getY() - 3) {
+                logs.add(log);
+            }
+        }
+        logs.sort(Comparator.comparingInt(BlockPos::getY));
+        for (BlockPos log : logs) {
+            boolean hasFreeSide = false;
+            for (Direction side : Direction.Plane.HORIZONTAL) {
+                BlockPos podPos = log.relative(side);
+                if (!level.getBlockState(podPos).canBeReplaced()) {
+                    continue;
+                }
+                hasFreeSide = true;
+                if (random.nextFloat() < 0.75F) {
+                    BlockState pod = ModBlocks.COCONUT_POD.get().defaultBlockState()
+                            .setValue(CoconutPodBlock.FACING, side.getOpposite())
+                            .setValue(CoconutPodBlock.AGE, random.nextInt(CoconutPodBlock.MAX_AGE + 1));
+                    level.setBlock(podPos, pod, 2);
+                }
+            }
+            if (hasFreeSide) {
+                return;
+            }
+        }
     }
 
     /**
@@ -93,7 +128,7 @@ public class CoconutTreeFeature extends Feature<NoneFeatureConfiguration> {
                 for (int dz = -4; dz <= 4; dz++) {
                     BlockPos pos = crown.offset(dx, dy, dz);
                     BlockState state = level.getBlockState(pos);
-                    if (state.is(Blocks.MANGROVE_LEAVES) || state.is(ModBlocks.COCONUT_LEAVES.get())) {
+                    if (state.is(Blocks.MANGROVE_LEAVES)) {
                         leaves.add(pos.immutable());
                     }
                 }
@@ -181,15 +216,6 @@ public class CoconutTreeFeature extends Feature<NoneFeatureConfiguration> {
     }
 
     private static void placeFrond(LevelAccessor level, BlockPos pos, RandomSource random) {
-        if (level.isOutsideBuildHeight(pos) || !level.getBlockState(pos).canBeReplaced()) {
-            return;
-        }
-        if (random.nextInt(4) == 0) {
-            BlockState state = ModBlocks.COCONUT_LEAVES.get().defaultBlockState()
-                    .setValue(CoconutLeavesBlock.AGE, random.nextInt(CoconutLeavesBlock.MAX_AGE + 1));
-            level.setBlock(pos, state, 2);
-        } else {
-            placeMangroveLeaf(level, pos);
-        }
+        placeMangroveLeaf(level, pos);
     }
 }

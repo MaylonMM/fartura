@@ -1,0 +1,12 @@
+{
+  "name": "Kettle",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:kettle",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:kettle"
+    }
+  ]
+}

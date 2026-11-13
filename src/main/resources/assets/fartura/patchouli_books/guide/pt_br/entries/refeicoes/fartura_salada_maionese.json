@@ -1,0 +1,12 @@
+{
+  "name": "Salada de Maionese",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:salada_maionese",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:salada_maionese"
+    }
+  ]
+}

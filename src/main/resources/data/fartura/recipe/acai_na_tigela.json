@@ -1,0 +1,10 @@
+﻿{
+  "type": "fartura:mortar",
+  "ingredient": {
+    "item": "fartura:acai"
+  },
+  "result": {
+    "id": "fartura:acai_na_tigela",
+    "count": 1
+  }
+}

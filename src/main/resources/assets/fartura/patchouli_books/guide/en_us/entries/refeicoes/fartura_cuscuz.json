@@ -1,0 +1,14 @@
+{
+  "name": "Cuscuz",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:cuscuz",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cuscuz",
+      "title": "Cuscuz",
+      "text": "Made in the pot with corn flour, salt and water."
+    }
+  ]
+}

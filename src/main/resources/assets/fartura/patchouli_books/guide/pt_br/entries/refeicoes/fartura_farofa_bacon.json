@@ -1,0 +1,14 @@
+{
+  "name": "Farofa de Bacon e Linguiça",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:farofa_bacon",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:farofa_bacon",
+      "title": "Farofa de Bacon e Linguiça",
+      "text": "Feita na panela com porco cozido, linguiça assada e farinhas."
+    }
+  ]
+}

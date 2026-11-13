@@ -1,0 +1,19 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "TT",
+    "MM"
+  ],
+  "key": {
+    "T": {
+      "tag": "c:tomatoes"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    }
+  },
+  "result": {
+    "id": "fartura:pasta",
+    "count": 1
+  }
+}

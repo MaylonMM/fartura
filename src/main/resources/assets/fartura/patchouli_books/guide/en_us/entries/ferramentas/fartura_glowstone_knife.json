@@ -1,0 +1,12 @@
+{
+  "name": "Glowstone Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:glowstone_knife",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:glowstone_knife"
+    }
+  ]
+}

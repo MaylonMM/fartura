@@ -1,0 +1,14 @@
+{
+  "name": "Pamonha",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:pamonha",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:pamonha",
+      "title": "Pamonha",
+      "text": "Feita na panela com farinha de milho, açúcar, leite e palha verde de milho."
+    }
+  ]
+}

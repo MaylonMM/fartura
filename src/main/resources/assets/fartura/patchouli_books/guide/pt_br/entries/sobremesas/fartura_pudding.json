@@ -1,0 +1,14 @@
+{
+  "name": "Pudim",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:pudding",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:pudding",
+      "title": "Pudim",
+      "text": "Feito na panela com ovo, açúcar e leite."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Paçoca",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:pacoca",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:pacoca"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Espetinho de Linguiça Assada",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_sausage_skewer",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_sausage_skewer_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_sausage_skewer_smoking"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_sausage_skewer_campfire"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Macarrão com Carne Moída",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:beef_pasta",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:beef_pasta",
+      "title": "Macarrão com Carne Moída",
+      "text": "Feito na panela com tomate, carne moída e massa de trigo."
+    }
+  ]
+}

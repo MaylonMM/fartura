@@ -1,0 +1,12 @@
+{
+  "name": "Raw Meat Skewer",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_beef_skewer",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_beef_skewer"
+    }
+  ]
+}

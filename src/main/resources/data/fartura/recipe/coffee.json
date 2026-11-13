@@ -1,0 +1,25 @@
+{
+  "type": "fartura:kettle",
+  "pattern": [
+    "C",
+    "F"
+  ],
+  "key": {
+    "C": {
+      "item": "fartura:coffee_bean"
+    },
+    "F": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:coffee",
+    "count": 1
+  }
+}

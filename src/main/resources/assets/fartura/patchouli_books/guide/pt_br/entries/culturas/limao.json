@@ -1,0 +1,12 @@
+{
+  "name": "Limão",
+  "category": "fartura:culturas",
+  "icon": "fartura:lime",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O limão é uma fruta cítrica ácida, base da limonada e de diversas bebidas refrescantes.$(br2)Encontrado em: Floresta, Floresta de Flores, Planície e Planície Ensolarada."
+    }
+  ]
+}

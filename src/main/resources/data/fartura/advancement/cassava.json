@@ -1,0 +1,37 @@
+{
+  "parent": "fartura:wild_corn",
+  "criteria": {
+    "has_cassava": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:cassava"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:cassava"
+    },
+    "title": {
+      "translate": "advancements.fartura.mandioca.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.mandioca.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "has_cassava"
+    ]
+  ]
+}

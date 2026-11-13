@@ -1,0 +1,12 @@
+{
+  "name": "Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:knife",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:knife"
+    }
+  ]
+}

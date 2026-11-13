@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "half=lower": {
       "model": "fartura:block/wild_rice"
+    },
+    "half=upper": {
+      "model": "fartura:block/wild_rice_upper"
     }
   }
 }

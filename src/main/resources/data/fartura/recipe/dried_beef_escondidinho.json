@@ -1,0 +1,23 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "QQ",
+    "CC",
+    "MM"
+  ],
+  "key": {
+    "Q": {
+      "tag": "c:cheeses"
+    },
+    "M": {
+      "item": "fartura:cassava"
+    },
+    "C": {
+      "item": "fartura:dried_beef"
+    }
+  },
+  "result": {
+    "id": "fartura:dried_beef_escondidinho",
+    "count": 2
+  }
+}

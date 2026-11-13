@@ -1,0 +1,12 @@
+{
+  "name": "Raw Chicken Skewer",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_chicken_skewer",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_chicken_skewer"
+    }
+  ]
+}

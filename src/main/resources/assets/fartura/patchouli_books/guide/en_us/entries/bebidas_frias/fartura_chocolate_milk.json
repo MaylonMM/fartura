@@ -1,0 +1,12 @@
+{
+  "name": "Chocolate Milk",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:chocolate_milk",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:chocolate_milk"
+    }
+  ]
+}

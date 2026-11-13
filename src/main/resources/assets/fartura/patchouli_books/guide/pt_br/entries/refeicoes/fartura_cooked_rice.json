@@ -1,0 +1,14 @@
+{
+  "name": "Arroz Cozido",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:cooked_rice",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cooked_rice",
+      "title": "Arroz Cozido",
+      "text": "Feito na panela com arroz e água."
+    }
+  ]
+}

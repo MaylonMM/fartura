@@ -1,0 +1,16 @@
+{
+  "name": "Arroz",
+  "category": "fartura:culturas",
+  "icon": "fartura:rice",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O arroz é o grão que acompanha quase toda refeição brasileira. Cresce em áreas alagadas, como beiras de rios.$(br2)Encontrado em: próximo a rios."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:rice_from_wild_rice"
+    }
+  ]
+}

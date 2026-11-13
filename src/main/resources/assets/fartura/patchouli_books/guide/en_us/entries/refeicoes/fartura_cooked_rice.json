@@ -1,0 +1,14 @@
+{
+  "name": "Cooked Rice",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:cooked_rice",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cooked_rice",
+      "title": "Cooked Rice",
+      "text": "Made in the pot with rice and water."
+    }
+  ]
+}

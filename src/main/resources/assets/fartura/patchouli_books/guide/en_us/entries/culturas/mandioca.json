@@ -1,0 +1,16 @@
+{
+  "name": "Cassava",
+  "category": "fartura:culturas",
+  "icon": "fartura:cassava",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Cassava is a root widely eaten in Brazil. Flour and tapioca are made from it, the base of many recipes.$(br2)Found in: Savanna, Savanna Plateau, Windswept Savanna, Sparse Jungle and Jungle."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:cassava_from_wild_cassava"
+          }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fartura:cassava",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "fartura:cassava_crop",
+              "properties": {
+                "half": "lower"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:block_state_property",
+                "block": "fartura:cassava_crop",
+                "properties": {
+                  "age": "7"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fartura:cassava",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "fartura:cassava_crop",
+              "properties": {
+                "half": "lower",
+                "age": "7"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 2.0
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

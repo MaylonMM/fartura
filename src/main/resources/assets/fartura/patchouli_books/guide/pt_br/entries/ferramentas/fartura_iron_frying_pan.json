@@ -1,0 +1,12 @@
+{
+  "name": "Frigideira de Ferro",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:iron_frying_pan",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:iron_frying_pan"
+    }
+  ]
+}

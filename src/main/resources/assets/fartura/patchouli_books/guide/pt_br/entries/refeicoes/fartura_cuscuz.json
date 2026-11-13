@@ -1,0 +1,14 @@
+{
+  "name": "Cuscuz",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:cuscuz",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cuscuz",
+      "title": "Cuscuz",
+      "text": "Feito na panela com farinha de milho, sal e água."
+    }
+  ]
+}

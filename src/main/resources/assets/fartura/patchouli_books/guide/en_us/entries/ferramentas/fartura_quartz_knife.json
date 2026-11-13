@@ -1,0 +1,12 @@
+{
+  "name": "Quartz Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:quartz_knife",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:quartz_knife"
+    }
+  ]
+}

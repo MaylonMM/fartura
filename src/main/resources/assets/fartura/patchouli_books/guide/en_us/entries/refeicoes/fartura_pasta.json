@@ -1,0 +1,14 @@
+{
+  "name": "Pasta",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:pasta",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:pasta",
+      "title": "Pasta",
+      "text": "Made in the pot with tomato and wheat dough."
+    }
+  ]
+}

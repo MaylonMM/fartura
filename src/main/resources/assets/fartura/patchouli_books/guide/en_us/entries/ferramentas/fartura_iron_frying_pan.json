@@ -1,0 +1,12 @@
+{
+  "name": "Iron Frying Pan",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:iron_frying_pan",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:iron_frying_pan"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Feijão",
+  "category": "fartura:culturas",
+  "icon": "fartura:bean",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O feijão é o acompanhamento indispensável da mesa brasileira e ingrediente principal da feijoada.$(br2)Encontrado em: Tropical, Savana, Floresta, Floresta Ventosa, Selva Esparsa e Campina."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:bean_from_wild_bean"
+    }
+  ]
+}

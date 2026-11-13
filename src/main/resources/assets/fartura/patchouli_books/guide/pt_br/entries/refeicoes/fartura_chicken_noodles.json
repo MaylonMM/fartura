@@ -1,0 +1,14 @@
+{
+  "name": "Noodles de Galinha Caipira",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:chicken_noodles",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:chicken_noodles",
+      "title": "Noodles de Galinha Caipira",
+      "text": "Feito na panela com frango cozido, cenoura, massa de trigo e água."
+    }
+  ]
+}

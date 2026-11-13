@@ -1,0 +1,12 @@
+{
+  "name": "Cheese Tapioca",
+  "category": "fartura:lanches",
+  "icon": "fartura:cheese_tapioca",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:cheese_tapioca"
+    }
+  ]
+}

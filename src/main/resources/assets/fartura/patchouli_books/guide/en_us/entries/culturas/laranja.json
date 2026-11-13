@@ -1,0 +1,12 @@
+{
+  "name": "Orange",
+  "category": "fartura:culturas",
+  "icon": "fartura:orange",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Orange is a sweet, juicy fruit, widely used in juices. It grows in open areas and forests.$(br2)Found in: Forest, Flower Forest, Plains and Sunflower Plains."
+    }
+  ]
+}

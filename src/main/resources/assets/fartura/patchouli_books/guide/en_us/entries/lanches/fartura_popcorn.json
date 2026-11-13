@@ -1,0 +1,20 @@
+{
+  "name": "Popcorn",
+  "category": "fartura:lanches",
+  "icon": "fartura:popcorn",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:popcorn_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:popcorn_smoking"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:popcorn_campfire"
+    }
+  ]
+}

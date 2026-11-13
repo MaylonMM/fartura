@@ -1,0 +1,12 @@
+{
+  "name": "Passion Fruit",
+  "category": "fartura:culturas",
+  "icon": "fartura:maracuja",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Passion fruit is a vine fruit that grows on the trunks of jungle trees. Its pulp is the base for many recipes.$(br2)Found in: Jungle, Sparse Jungle and Bamboo Jungle."
+    }
+  ]
+}

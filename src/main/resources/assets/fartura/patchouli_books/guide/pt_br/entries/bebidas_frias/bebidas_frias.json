@@ -1,0 +1,12 @@
+{
+  "name": "Bebidas Frias",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:lemonade",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Limonadas, sucos e a água de coco, refrescantes para o calor. Muitas usam frutas cultivadas no seu mundo, como o maracujá e a laranja."
+    }
+  ]
+}

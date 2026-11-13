@@ -23,6 +23,7 @@ val neo_version_range: String by project
 val loader_version_range: String by project
 val jei_version: String by project
 val jade_version: String by project
+val patchouli_version: String by project
 
 if (project == rootProject) {
     // Use Wrapper.DistributionType.ALL para baixar as fontes do Gradle (documentação no IntelliJ).
@@ -109,6 +110,7 @@ dependencies {
     implementation("net.neoforged:neoforge:$neo_version")
     compileOnly("mezz.jei:jei-$minecraft_version-neoforge-api:$jei_version")
     compileOnly("maven.modrinth:nvQzSEkH:$jade_version")
+    compileOnly("maven.modrinth:patchouli:$patchouli_version")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -1,0 +1,16 @@
+{
+  "name": "Salt",
+  "category": "fartura:lanches",
+  "icon": "fartura:salt",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:salt_smelting"
+    },
+    {
+      "type": "patchouli:blasting",
+      "recipe": "fartura:salt_blasting"
+    }
+  ]
+}

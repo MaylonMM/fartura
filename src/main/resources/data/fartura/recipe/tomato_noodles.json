@@ -1,0 +1,28 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "TT",
+    "MA"
+  ],
+  "key": {
+    "T": {
+      "tag": "c:tomatoes"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    },
+    "A": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:tomato_noodles",
+    "count": 1
+  }
+}

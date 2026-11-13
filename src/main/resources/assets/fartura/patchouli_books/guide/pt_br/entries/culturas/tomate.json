@@ -1,0 +1,20 @@
+{
+  "name": "Tomate",
+  "category": "fartura:culturas",
+  "icon": "fartura:tomato",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O tomate é a base de molhos, saladas e do macarrão com molho de tomate.$(br2)Encontrado em: Tropical, Savana, Selva Esparsa e Campina."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:tomato_seeds_from_tomato"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:tomato_seeds_from_wild_tomato"
+    }
+  ]
+}

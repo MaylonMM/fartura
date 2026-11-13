@@ -1,0 +1,12 @@
+{
+  "name": "Laranja",
+  "category": "fartura:culturas",
+  "icon": "fartura:orange",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A laranja é uma fruta doce e suculenta, muito usada em sucos. Cresce em áreas abertas e florestas.$(br2)Encontrado em: Floresta, Floresta de Flores, Planície e Planície Ensolarada."
+    }
+  ]
+}

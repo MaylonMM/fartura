@@ -1,0 +1,12 @@
+{
+  "name": "Faca de Lápis",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:lapis_knife",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:lapis_knife"
+    }
+  ]
+}

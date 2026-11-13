@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GA",
+    "F "
+  ],
+  "key": {
+    "G": {
+      "item": "fartura:guarana"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:guarana_juice",
+    "count": 1
+  }
+}

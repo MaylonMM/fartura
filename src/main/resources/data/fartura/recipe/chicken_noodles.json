@@ -1,0 +1,31 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "FC",
+    "MA"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    },
+    "A": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:chicken_noodles",
+    "count": 1
+  }
+}

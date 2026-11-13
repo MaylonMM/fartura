@@ -1,0 +1,12 @@
+{
+  "name": "Copo de Leite",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:milk_cup",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:milk_cup"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CL",
+    "F "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "F": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "fartura:chocolate_milk",
+    "count": 1
+  }
+}

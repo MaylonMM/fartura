@@ -1,0 +1,16 @@
+{
+  "name": "Amendoim",
+  "category": "fartura:culturas",
+  "icon": "fartura:peanut",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O amendoim cresce embaixo da terra e é usado em doces como a paçoca.$(br2)Encontrado em: Savana."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:peanut_from_wild_peanut"
+    }
+  ]
+}

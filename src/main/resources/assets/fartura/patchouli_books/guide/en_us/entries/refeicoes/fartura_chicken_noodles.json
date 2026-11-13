@@ -1,0 +1,14 @@
+{
+  "name": "Country Chicken Noodles",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:chicken_noodles",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:chicken_noodles",
+      "title": "Country Chicken Noodles",
+      "text": "Made in the pot with cooked chicken, carrot, wheat dough and water."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "fartura:mortar",
+  "ingredient": {
+    "item": "fartura:cassava"
+  },
+  "result": {
+    "id": "fartura:cassava_flour",
+    "count": 1
+  }
+}

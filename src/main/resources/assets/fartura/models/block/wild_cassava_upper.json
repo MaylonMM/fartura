@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "fartura:block/wild_cassava_upper",
+    "particle": "fartura:block/wild_cassava_upper"
+  }
+}

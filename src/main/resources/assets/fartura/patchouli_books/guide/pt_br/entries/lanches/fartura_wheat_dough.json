@@ -1,0 +1,12 @@
+{
+  "name": "Massa de Trigo",
+  "category": "fartura:lanches",
+  "icon": "fartura:wheat_dough",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:wheat_dough"
+    }
+  ]
+}

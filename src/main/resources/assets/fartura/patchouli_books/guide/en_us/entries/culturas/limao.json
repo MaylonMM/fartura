@@ -1,0 +1,12 @@
+{
+  "name": "Lime",
+  "category": "fartura:culturas",
+  "icon": "fartura:lime",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Lime is a sour citrus fruit, the base of lemonade and many refreshing drinks.$(br2)Found in: Forest, Flower Forest, Plains and Sunflower Plains."
+    }
+  ]
+}

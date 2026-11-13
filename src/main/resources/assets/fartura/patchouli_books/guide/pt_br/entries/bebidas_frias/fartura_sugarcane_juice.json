@@ -1,0 +1,12 @@
+{
+  "name": "Caldo de Cana",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:sugarcane_juice",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:sugarcane_juice"
+    }
+  ]
+}

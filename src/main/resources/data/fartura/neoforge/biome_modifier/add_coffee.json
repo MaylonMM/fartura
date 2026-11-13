@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#fartura:coffee_biomes",
+  "features": "fartura:coffee",
+  "step": "vegetal_decoration"
+}

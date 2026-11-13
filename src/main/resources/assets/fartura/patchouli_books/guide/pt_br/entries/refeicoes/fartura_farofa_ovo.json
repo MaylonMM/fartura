@@ -1,0 +1,14 @@
+{
+  "name": "Farofa de Ovo",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:farofa_ovo",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:farofa_ovo",
+      "title": "Farofa de Ovo",
+      "text": "Feita na panela com ovo e farinhas."
+    }
+  ]
+}

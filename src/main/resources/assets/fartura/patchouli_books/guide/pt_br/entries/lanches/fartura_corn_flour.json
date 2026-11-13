@@ -1,0 +1,14 @@
+{
+  "name": "Farinha de Milho",
+  "category": "fartura:lanches",
+  "icon": "fartura:corn_flour",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:corn_flour",
+      "title": "Farinha de Milho",
+      "text": "Feita no pilão com grãos de milho."
+    }
+  ]
+}

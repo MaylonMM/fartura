@@ -1,0 +1,12 @@
+{
+  "name": "Limonada",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:lemonade",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:lemonade"
+    }
+  ]
+}

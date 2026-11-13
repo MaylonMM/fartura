@@ -1,0 +1,14 @@
+{
+  "name": "Egg Farofa",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:farofa_ovo",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:farofa_ovo",
+      "title": "Egg Farofa",
+      "text": "Made in the pot with egg and flours."
+    }
+  ]
+}

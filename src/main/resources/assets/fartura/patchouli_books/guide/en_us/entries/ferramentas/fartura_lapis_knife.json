@@ -1,0 +1,12 @@
+{
+  "name": "Lapis Lazuli Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:lapis_knife",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:lapis_knife"
+    }
+  ]
+}

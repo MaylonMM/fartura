@@ -1,0 +1,12 @@
+{
+  "name": "Corn Cake",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:corn_cake",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:corn_cake"
+    }
+  ]
+}

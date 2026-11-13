@@ -1,0 +1,14 @@
+{
+  "name": "Stroganoff, Rice and Straw Potatoes",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:chicken_stroganoff",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:chicken_stroganoff",
+      "title": "Stroganoff, Rice and Straw Potatoes",
+      "text": "Made in the pot with chicken, milk, tomato, rice and potato."
+    }
+  ]
+}

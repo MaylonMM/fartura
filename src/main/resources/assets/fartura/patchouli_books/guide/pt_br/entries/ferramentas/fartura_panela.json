@@ -1,0 +1,12 @@
+{
+  "name": "Panela de Barro",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:panela",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:panela"
+    }
+  ]
+}

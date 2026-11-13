@@ -1,0 +1,12 @@
+{
+  "name": "Dried Beef",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:dried_beef",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:dried_beef"
+    }
+  ]
+}

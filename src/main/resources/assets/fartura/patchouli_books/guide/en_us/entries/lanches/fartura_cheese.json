@@ -1,0 +1,12 @@
+{
+  "name": "Cheese",
+  "category": "fartura:lanches",
+  "icon": "fartura:cheese",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:cheese"
+    }
+  ]
+}

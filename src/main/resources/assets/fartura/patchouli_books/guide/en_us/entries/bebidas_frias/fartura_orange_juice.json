@@ -1,0 +1,12 @@
+{
+  "name": "Orange Juice",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:orange_juice",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:orange_juice"
+    }
+  ]
+}

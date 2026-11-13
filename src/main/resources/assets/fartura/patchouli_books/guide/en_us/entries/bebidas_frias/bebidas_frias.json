@@ -1,0 +1,12 @@
+{
+  "name": "Cold Drinks",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:lemonade",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Lemonade, juices and coconut water, refreshing in the heat. Many use fruits grown in your world, like passion fruit and orange."
+    }
+  ]
+}

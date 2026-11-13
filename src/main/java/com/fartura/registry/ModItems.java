@@ -1,11 +1,20 @@
 package com.fartura.registry;
 
 import com.fartura.Fartura;
+import com.fartura.item.AcaiItem;
+import com.fartura.item.MaracujaItem;
+import com.fartura.item.BottleDrinkItem;
+import com.fartura.item.CoffeeBeanItem;
+import com.fartura.item.GuideBookItem;
+import com.fartura.item.LimeItem;
+import com.fartura.item.OrangeItem;
 import com.fartura.item.ColoredKnifeItem;
+import com.fartura.item.GuaranaItem;
 import com.fartura.item.CandiedAppleItem;
 import com.fartura.item.CoconutWaterItem;
 import com.fartura.item.MilkCupItem;
 import com.fartura.item.PartyPopperItem;
+import com.fartura.item.CobblestoneFlakeItem;
 import com.fartura.item.ThrowableCoconutItem;
 
 import net.minecraft.world.effect.MobEffectInstance;
@@ -70,7 +79,7 @@ public final class ModItems {
             ITEMS.registerSimpleBlockItem("wild_corn", ModBlocks.WILD_CORN);
 
     // Named after the plant block so the rice's name comes from its own translation key.
-    public static final DeferredItem<ItemNameBlockItem> ARROZ = ITEMS.register("arroz",
+    public static final DeferredItem<ItemNameBlockItem> RICE = ITEMS.register("rice",
             () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));
 
     public static final DeferredItem<BlockItem> WILD_RICE =
@@ -137,7 +146,34 @@ public final class ModItems {
                     .saturationModifier(0.1f)
                     .build()));
 
+    // Cassava is both food and seed, so it places the plant. Overrides the name so it shows "Cassava" instead of the plant's name.
+    public static final DeferredItem<ItemNameBlockItem> CASSAVA = ITEMS.<ItemNameBlockItem>register("cassava",
+            () -> new ItemNameBlockItem(ModBlocks.CASSAVA_CROP.get(), new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1)
+                    .saturationModifier(0.3f)
+                    .build())) {
+                @Override
+                public String getDescriptionId() {
+                    return "item.fartura.cassava";
+                }
+            });
+
+    public static final DeferredItem<BlockItem> WILD_CASSAVA =
+            ITEMS.registerSimpleBlockItem("wild_cassava", ModBlocks.WILD_CASSAVA);
+
     public static final DeferredItem<Item> CORN_FLOUR = ITEMS.registerSimpleItem("corn_flour",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(2)
+                    .saturationModifier(0.1f)
+                    .build()));
+
+    public static final DeferredItem<Item> CASSAVA_FLOUR = ITEMS.registerSimpleItem("cassava_flour",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(2)
+                    .saturationModifier(0.1f)
+                    .build()));
+
+    public static final DeferredItem<Item> TAPIOCA_FLOUR = ITEMS.registerSimpleItem("tapioca_flour",
             new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(2)
                     .saturationModifier(0.1f)
@@ -179,6 +215,12 @@ public final class ModItems {
                     .saturationModifier(0.6f)
                     .build())));
 
+    public static final DeferredItem<BlockItem> MARACUJA_CAKE = ITEMS.register("maracuja_cake",
+            () -> new BlockItem(ModBlocks.MARACUJA_CAKE.get(), new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.6f)
+                    .build())));
+
     public static final DeferredItem<Item> PAMONHA = ITEMS.registerSimpleItem("pamonha",
             new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(6)
@@ -203,13 +245,13 @@ public final class ModItems {
                     .saturationModifier(0.9f)
                     .build()));
 
-    public static final DeferredItem<Item> COMBO_PLATE = ITEMS.registerSimpleItem("combo_plate",
+    public static final DeferredItem<Item> PRATO_FEITO = ITEMS.registerSimpleItem("prato_feito",
             new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(16)
                     .saturationModifier(0.9f)
                     .build()));
 
-    public static final DeferredItem<Item> MACARONI = ITEMS.registerSimpleItem("macaroni",
+    public static final DeferredItem<Item> PASTA = ITEMS.registerSimpleItem("pasta",
             new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(12)
                     .saturationModifier(0.8f)
@@ -232,6 +274,72 @@ public final class ModItems {
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0f)
                     .build()));
 
+    public static final DeferredItem<Item> DRIED_BEEF = ITEMS.registerSimpleItem("dried_beef",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.8f)
+                    .build()));
+
+    public static final DeferredItem<Item> DRIED_BEEF_ESCONDIDINHO = ITEMS.registerSimpleItem("dried_beef_escondidinho",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(10)
+                    .saturationModifier(0.8f)
+                    .build()));
+
+    public static final DeferredItem<Item> SALADA_MAIONESE = ITEMS.registerSimpleItem("salada_maionese",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(10)
+                    .saturationModifier(0.8f)
+                    .build()));
+
+    public static final DeferredItem<Item> FAROFA_OVO = ITEMS.registerSimpleItem("farofa_ovo",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> FAROFA_BACON = ITEMS.registerSimpleItem("farofa_bacon",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> COXINHA = ITEMS.registerSimpleItem("coxinha",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(6)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> FEIJOADA = ITEMS.registerSimpleItem("feijoada",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(16)
+                    .saturationModifier(0.8f)
+                    .build()));
+
+    public static final DeferredItem<Item> PAO_DE_QUEIJO = ITEMS.registerSimpleItem("pao_de_queijo",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(7)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> CHEESE_TAPIOCA = ITEMS.registerSimpleItem("cheese_tapioca",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> CHICKEN_NOODLES = ITEMS.registerSimpleItem("chicken_noodles",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(10)
+                    .saturationModifier(0.6f)
+                    .build()));
+
+    public static final DeferredItem<Item> TOMATO_NOODLES = ITEMS.registerSimpleItem("tomato_noodles",
+            new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(10)
+                    .saturationModifier(0.6f)
+                    .build()));
+
     public static final DeferredItem<BlockItem> BEIJINHO = ITEMS.register("beijinho",
             () -> new BlockItem(ModBlocks.BEIJINHO.get(), new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(2)
@@ -242,6 +350,45 @@ public final class ModItems {
             () -> new BlockItem(ModBlocks.BRIGADEIRO.get(), new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(2)
                     .saturationModifier(0.2f)
+                    .build())));
+
+    public static final DeferredItem<AcaiItem> ACAI = ITEMS.register("acai",
+            () -> new AcaiItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(2)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<MaracujaItem> MARACUJA = ITEMS.register("maracuja",
+            () -> new MaracujaItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<LimeItem> LIME = ITEMS.register("lime",
+            () -> new LimeItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<OrangeItem> ORANGE = ITEMS.register("orange",
+            () -> new OrangeItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<GuaranaItem> GUARANA = ITEMS.register("guarana",
+            () -> new GuaranaItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<CoffeeBeanItem> COFFEE_BEAN = ITEMS.register("coffee_bean",
+            () -> new CoffeeBeanItem(new Item.Properties()));
+
+    public static final DeferredItem<Item> ACAI_NA_TIGELA = ITEMS.register("acai_na_tigela",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.5f)
                     .build())));
 
     public static final DeferredItem<ThrowableCoconutItem> GREEN_COCONUT = ITEMS.register("green_coconut",
@@ -371,6 +518,12 @@ public final class ModItems {
                     .saturationModifier(0.8f)
                     .build())));
 
+    public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(8)
+                    .saturationModifier(0.4f)
+                    .build())));
+
     public static final DeferredItem<Item> PASTEL_DE_NATA = ITEMS.register("pastel_de_nata",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(8)
@@ -402,11 +555,70 @@ public final class ModItems {
                     .saturationModifier(0.3f)
                     .build())));
 
-    public static final DeferredItem<BlockItem> COCONUT_LEAVES =
-            ITEMS.registerSimpleBlockItem("coconut_leaves", ModBlocks.COCONUT_LEAVES);
+    public static final DeferredItem<Item> LEMONADE = ITEMS.register("lemonade",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> GUARANA_JUICE = ITEMS.register("guarana_juice",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> SUGARCANE_JUICE = ITEMS.register("sugarcane_juice",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> MARACUJA_JUICE = ITEMS.register("maracuja_juice",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200), 0.75f)
+                    .build())));
+
+    public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.3f)
+                    .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+                    .build())));
+
+    public static final DeferredItem<Item> COFFEE_WITH_MILK = ITEMS.register("coffee_with_milk",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(7)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> GUIDE_BOOK = ITEMS.register("guide",
+            () -> new GuideBookItem(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> HOT_CHOCOLATE = ITEMS.register("hot_chocolate",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(7)
+                    .saturationModifier(0.3f)
+                    .build())));
+
+    public static final DeferredItem<Item> CHOCOLATE_MILK = ITEMS.register("chocolate_milk",
+            () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(7)
+                    .saturationModifier(0.3f)
+                    .build())));
 
     public static final DeferredItem<BlockItem> COCONUT_SAPLING =
             ITEMS.registerSimpleBlockItem("coconut_sapling", ModBlocks.COCONUT_SAPLING);
+
+    public static final DeferredItem<CobblestoneFlakeItem> COBBLESTONE_FLAKE =
+            ITEMS.register("cobblestone_flake", () -> new CobblestoneFlakeItem(ModBlocks.COBBLESTONE_FLAKE.get(), new Item.Properties()));
 
     public static final DeferredItem<BlockItem> STONE_MORTAR =
             ITEMS.registerSimpleBlockItem("stone_mortar", ModBlocks.STONE_MORTAR);

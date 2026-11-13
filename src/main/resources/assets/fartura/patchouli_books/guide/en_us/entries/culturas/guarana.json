@@ -1,0 +1,12 @@
+{
+  "name": "Guarana",
+  "category": "fartura:culturas",
+  "icon": "fartura:guarana",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Guarana is a traditional Amazonian fruit, known for its flavor and for its energizing drink.$(br2)Found in: Jungle, Sparse Jungle and Bamboo Jungle."
+    }
+  ]
+}

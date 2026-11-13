@@ -1,0 +1,12 @@
+{
+  "name": "Churrasqueira de Chão",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:barbecue_grill_floor",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:barbecue_grill_floor"
+    }
+  ]
+}

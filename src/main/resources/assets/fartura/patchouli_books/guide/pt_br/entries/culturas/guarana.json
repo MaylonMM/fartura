@@ -1,0 +1,12 @@
+{
+  "name": "Guaraná",
+  "category": "fartura:culturas",
+  "icon": "fartura:guarana",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O guaraná é um fruto amazônico tradicional, conhecido pelo seu sabor e pela bebida energizante.$(br2)Encontrado em: Selva, Selva Esparsa e Selva de Bambu."
+    }
+  ]
+}

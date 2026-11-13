@@ -1,0 +1,12 @@
+{
+  "name": "Espetinho de Vegetais Cru",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_vegetable_skewer",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_vegetable_skewer"
+    }
+  ]
+}

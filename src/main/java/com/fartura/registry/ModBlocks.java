@@ -1,21 +1,30 @@
 package com.fartura.registry;
 
 import com.fartura.Fartura;
+import com.fartura.block.AcaiPodBlock;
+import com.fartura.block.MaracujaVineBlock;
+import com.fartura.block.LimePodBlock;
+import com.fartura.block.OrangePodBlock;
 import com.fartura.block.BarbecueGrillBlock;
 import com.fartura.block.FrigideiraBlock;
+import com.fartura.block.CoffeeCropBlock;
+import com.fartura.block.GuaranaCropBlock;
 import com.fartura.block.BarbecueGrillFloorBlock;
 import com.fartura.block.CarrotCakeBlock;
 import com.fartura.block.KettleBlock;
-import com.fartura.block.CoconutLeavesBlock;
+import com.fartura.block.CoconutPodBlock;
 import com.fartura.block.CoconutSaplingBlock;
 import com.fartura.block.CoconutWaterBlock;
 import com.fartura.block.CuttingBoardBlock;
 import com.fartura.block.PanelaBlock;
 import com.fartura.block.SweetBlock;
 import com.fartura.block.CornCakeBlock;
+import com.fartura.block.MaracujaCakeBlock;
 import com.fartura.block.CornCropBlock;
+import com.fartura.block.CassavaCropBlock;
 import com.fartura.block.PeanutCropBlock;
 import com.fartura.block.RiceCropBlock;
+import com.fartura.block.CobblestoneFlakeBlock;
 import com.fartura.block.StoneMortarBlock;
 import com.fartura.block.StrawberryCropBlock;
 import com.fartura.block.TomatoCropBlock;
@@ -24,10 +33,12 @@ import com.fartura.block.BeanCropBlock;
 import com.fartura.block.WildCornBlock;
 import com.fartura.block.WildPeanutBlock;
 import com.fartura.block.WildRiceBlock;
+import com.fartura.block.WildCassavaBlock;
 import com.fartura.block.WildStrawberryBlock;
 import com.fartura.block.WildTomatoBlock;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -152,6 +163,53 @@ public final class ModBlocks {
                     .offsetType(BlockBehaviour.OffsetType.NONE)
                     .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<WildCassavaBlock> WILD_CASSAVA = BLOCKS.register("wild_cassava",
+            () -> new WildCassavaBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<CassavaCropBlock> CASSAVA_CROP = BLOCKS.register("cassava_crop",
+            () -> new CassavaCropBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)
+                    .offsetType(BlockBehaviour.OffsetType.NONE)
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<GuaranaCropBlock> GUARANA_CROP = BLOCKS.register("guarana_crop",
+            () -> new GuaranaCropBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)
+                    .offsetType(BlockBehaviour.OffsetType.NONE)
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<CoffeeCropBlock> COFFEE_CROP = BLOCKS.register("coffee_crop",
+            () -> new CoffeeCropBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)
+                    .offsetType(BlockBehaviour.OffsetType.NONE)
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<CobblestoneFlakeBlock> COBBLESTONE_FLAKE = BLOCKS.register("cobblestone_flake",
+            () -> new CobblestoneFlakeBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .strength(0.1f)
+                    .sound(SoundType.STONE)
+                    .noOcclusion()
+                    .noCollission()));
+
     public static final DeferredBlock<StoneMortarBlock> STONE_MORTAR = BLOCKS.register("stone_mortar",
             () -> new StoneMortarBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.STONE)
@@ -191,6 +249,14 @@ public final class ModBlocks {
                     .pushReaction(PushReaction.DESTROY)
                     .noOcclusion()));
 
+    public static final DeferredBlock<MaracujaCakeBlock> MARACUJA_CAKE = BLOCKS.register("maracuja_cake",
+            () -> new MaracujaCakeBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .strength(0.5f)
+                    .sound(SoundType.WOOL)
+                    .pushReaction(PushReaction.DESTROY)
+                    .noOcclusion()));
+
     public static final DeferredBlock<SweetBlock> BEIJINHO = BLOCKS.register("beijinho",
             () -> new SweetBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_ORANGE)
@@ -207,12 +273,55 @@ public final class ModBlocks {
                     .pushReaction(PushReaction.DESTROY)
                     .noOcclusion()));
 
-    public static final DeferredBlock<CoconutLeavesBlock> COCONUT_LEAVES = BLOCKS.register("coconut_leaves",
-            () -> new CoconutLeavesBlock(BlockBehaviour.Properties.of()
+    public static final DeferredBlock<CoconutPodBlock> COCONUT_POD = BLOCKS.register("coconut_pod",
+            () -> new CoconutPodBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT)
                     .strength(0.2f)
                     .randomTicks()
-                    .sound(SoundType.GRASS)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    /** Crop sounds for steps, placing and hitting; harvest (break) uses the crop break sound. */
+    private static final SoundType ACAI_SOUND = new SoundType(
+            SoundType.WOOD.getVolume(), SoundType.WOOD.getPitch(),
+            SoundEvents.CROP_BREAK,
+            SoundType.WOOD.getStepSound(), SoundEvents.CROP_PLANTED,
+            SoundType.WOOD.getHitSound(), SoundType.WOOD.getFallSound());
+
+    public static final DeferredBlock<AcaiPodBlock> ACAI_POD = BLOCKS.register("acai_pod",
+            () -> new AcaiPodBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .strength(0.2f)
+                    .randomTicks()
+                    .sound(ACAI_SOUND)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<MaracujaVineBlock> MARACUJA_VINE = BLOCKS.register("maracuja_vine",
+            () -> new MaracujaVineBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .strength(0.2f)
+                    .randomTicks()
+                    .sound(ACAI_SOUND)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<LimePodBlock> LIME_POD = BLOCKS.register("lime_pod",
+            () -> new LimePodBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .strength(0.2f)
+                    .randomTicks()
+                    .sound(ACAI_SOUND)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<OrangePodBlock> ORANGE_POD = BLOCKS.register("orange_pod",
+            () -> new OrangePodBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .strength(0.2f)
+                    .randomTicks()
+                    .sound(ACAI_SOUND)
                     .noOcclusion()
                     .pushReaction(PushReaction.DESTROY)));
 

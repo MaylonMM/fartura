@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "L ",
+    "F "
+  ],
+  "key": {
+    "L": {
+      "item": "fartura:orange"
+    },
+    "F": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "fartura:orange_juice",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#fartura:wild_cassava_biomes",
+  "features": "fartura:wild_cassava",
+  "step": "vegetal_decoration"
+}

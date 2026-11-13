@@ -1,0 +1,14 @@
+{
+  "name": "Açaí Bowl",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:acai_na_tigela",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:acai_na_tigela",
+      "title": "Açaí Bowl",
+      "text": "Made in the mortar with açaí."
+    }
+  ]
+}

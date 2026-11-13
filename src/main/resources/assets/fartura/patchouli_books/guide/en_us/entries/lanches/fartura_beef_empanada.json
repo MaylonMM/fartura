@@ -1,0 +1,12 @@
+{
+  "name": "Beef Empanada",
+  "category": "fartura:lanches",
+  "icon": "fartura:beef_empanada",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:beef_empanada"
+    }
+  ]
+}

@@ -46,9 +46,17 @@ public final class ClientSetup {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEANUT_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_STRAWBERRY.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_CASSAVA.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.CASSAVA_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.GUARANA_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COFFEE_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARBECUE_GRILL.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BARBECUE_GRILL_FLOOR.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COCONUT_LEAVES.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COCONUT_POD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACAI_POD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MARACUJA_VINE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIME_POD.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_POD.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.COCONUT_SAPLING.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BEIJINHO.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BRIGADEIRO.get(), RenderType.cutout());
@@ -59,24 +67,26 @@ public final class ClientSetup {
     }
 
     @SubscribeEvent
-    static void onRegisterBlockColors(RegisterColorHandlersEvent.Block event) {
-        event.register((state, level, pos, tintIndex) -> level != null && pos != null
-                ? BiomeColors.getAverageFoliageColor(level, pos)
-                : FoliageColor.getDefaultColor(), ModBlocks.COCONUT_LEAVES.get());
-    }
-
-    @SubscribeEvent
-    static void onRegisterItemColors(RegisterColorHandlersEvent.Item event) {
-        event.register((stack, tintIndex) -> FoliageColor.getDefaultColor(), ModBlocks.COCONUT_LEAVES.get());
-    }
-
-    @SubscribeEvent
     static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.BARBECUE_GRILL.get(), BarbecueGrillRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUTTING_BOARD.get(), CuttingBoardRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.FRIGIDEIRA.get(), FrigideiraRenderer::new);
         event.registerEntityRenderer(ModEntities.COCONUT_PROJECTILE.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntities.PARTY_POPPER_PROJECTILE.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ModEntities.COBBLESTONE_FLAKE_PROJECTILE.get(), ThrownItemRenderer::new);
+    }
+
+    @SubscribeEvent
+    static void onRegisterBlockColors(RegisterColorHandlersEvent.Block event) {
+        // Tint only the leaf layer (tintindex 0); the fruit layer stays untinted.
+        event.register((state, level, pos, tintIndex) -> {
+            if (tintIndex != 0) {
+                return -1;
+            }
+            return level != null && pos != null
+                    ? BiomeColors.getAverageFoliageColor(level, pos)
+                    : FoliageColor.getDefaultColor();
+        }, ModBlocks.MARACUJA_VINE.get());
     }
 
     @SubscribeEvent

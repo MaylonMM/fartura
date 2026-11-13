@@ -1,0 +1,12 @@
+{
+  "name": "Guarana Juice",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:guarana_juice",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:guarana_juice"
+    }
+  ]
+}

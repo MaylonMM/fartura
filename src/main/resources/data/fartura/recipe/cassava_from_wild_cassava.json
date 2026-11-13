@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fartura:wild_cassava"
+    }
+  ],
+  "result": {
+    "id": "fartura:cassava",
+    "count": 1
+  }
+}

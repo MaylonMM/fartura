@@ -1,0 +1,12 @@
+{
+  "name": "Amethyst Knife",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:amethyst_knife",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:amethyst_knife"
+    }
+  ]
+}

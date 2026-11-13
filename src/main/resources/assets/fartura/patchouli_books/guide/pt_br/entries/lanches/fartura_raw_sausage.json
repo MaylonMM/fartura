@@ -1,0 +1,12 @@
+{
+  "name": "Linguiça Crua",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_sausage",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_sausage"
+    }
+  ]
+}

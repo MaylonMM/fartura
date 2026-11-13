@@ -1,0 +1,20 @@
+{
+  "name": "Morango",
+  "category": "fartura:culturas",
+  "icon": "fartura:strawberry",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Fruta vermelha e doce, usada em sobremesas, doces cristalizados e sucos.$(br2)Encontrado em: Floresta, Floresta de Flores, Floresta de Bétulas, Campina, Planície e Planície Ensolarada."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:strawberry_seeds_from_strawberry"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:strawberry_seeds_from_wild_strawberry"
+    }
+  ]
+}

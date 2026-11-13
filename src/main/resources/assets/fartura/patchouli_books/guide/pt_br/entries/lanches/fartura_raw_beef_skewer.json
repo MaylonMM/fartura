@@ -1,0 +1,12 @@
+{
+  "name": "Espetinho de Carne Crua",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_beef_skewer",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_beef_skewer"
+    }
+  ]
+}

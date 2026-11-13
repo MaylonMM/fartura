@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "fartura:block/corn_crop_2_upper",
+    "particle": "fartura:block/corn_crop_2_upper"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Bolo de Cenoura com Chocolate",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:carrot_cake",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:carrot_cake"
+    }
+  ]
+}

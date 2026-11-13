@@ -39,3 +39,10 @@ config = "fartura.mixins.json"
     versionRange="*"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="patchouli"
+    type="optional"
+    versionRange="*"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    "MLM",
+    "OAO",
+    "TTT"
+  ],
+  "key": {
+    "M": {
+      "item": "fartura:maracuja"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "id": "fartura:maracuja_cake",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Brigadeiro",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:brigadeiro",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:brigadeiro",
+      "title": "Brigadeiro",
+      "text": "Made in the pot with milk, cocoa, sugar and paper."
+    }
+  ]
+}

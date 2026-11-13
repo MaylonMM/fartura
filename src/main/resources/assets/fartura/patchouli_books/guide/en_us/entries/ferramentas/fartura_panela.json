@@ -1,0 +1,12 @@
+{
+  "name": "Clay Pot",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:panela",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:panela"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Pastel de Queijo",
+  "category": "fartura:lanches",
+  "icon": "fartura:cheese_pastel",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:cheese_pastel"
+    }
+  ]
+}

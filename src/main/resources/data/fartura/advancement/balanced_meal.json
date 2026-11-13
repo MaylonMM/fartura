@@ -1,0 +1,35 @@
+{
+  "parent": "fartura:root",
+  "criteria": {
+    "ate_coxinha": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fartura:coxinha"
+          ]
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "fartura:coxinha"
+    },
+    "title": {
+      "translate": "advancements.fartura.balanced_meal.title"
+    },
+    "description": {
+      "translate": "advancements.fartura.balanced_meal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "ate_coxinha"
+    ]
+  ]
+}

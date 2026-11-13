@@ -1,0 +1,14 @@
+{
+  "name": "Açaí na Tigela",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:acai_na_tigela",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:acai_na_tigela",
+      "title": "Açaí na Tigela",
+      "text": "Feito no pilão com açaí."
+    }
+  ]
+}

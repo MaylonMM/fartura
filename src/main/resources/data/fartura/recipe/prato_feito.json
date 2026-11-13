@@ -1,0 +1,25 @@
+{
+  "type": "fartura:panela",
+  "pattern": [
+    "CB",
+    "AF"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cooked_beef"
+    },
+    "B": {
+      "item": "fartura:fried_potato"
+    },
+    "A": {
+      "tag": "c:rice"
+    },
+    "F": {
+      "item": "fartura:bean"
+    }
+  },
+  "result": {
+    "id": "fartura:prato_feito",
+    "count": 1
+  }
+}

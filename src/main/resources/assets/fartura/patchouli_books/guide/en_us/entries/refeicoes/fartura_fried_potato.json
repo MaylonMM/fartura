@@ -1,0 +1,14 @@
+{
+  "name": "Fried Potato",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:fried_potato",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:fried_potato",
+      "title": "Fried Potato",
+      "text": "Made in the frying pan with potato."
+    }
+  ]
+}

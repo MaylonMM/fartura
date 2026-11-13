@@ -4,7 +4,7 @@
   "pattern": [
     "CLC",
     "OAO",
-    "FFF"
+    "FTF"
   ],
   "key": {
     "C": {
@@ -21,6 +21,9 @@
     },
     "F": {
       "item": "minecraft:carrot"
+    },
+    "T": {
+      "item": "minecraft:wheat"
     }
   },
   "result": {

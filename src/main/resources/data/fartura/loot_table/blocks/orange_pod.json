@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fartura:orange",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "fartura:orange_pod",
+              "properties": {"age": "2"}
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

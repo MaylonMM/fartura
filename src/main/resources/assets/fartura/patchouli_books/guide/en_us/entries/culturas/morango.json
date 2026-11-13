@@ -1,0 +1,20 @@
+{
+  "name": "Strawberry",
+  "category": "fartura:culturas",
+  "icon": "fartura:strawberry",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A sweet red fruit used in desserts, candied sweets and juices.$(br2)Found in: Forest, Flower Forest, Birch Forest, Meadow, Plains and Sunflower Plains."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:strawberry_seeds_from_strawberry"
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:strawberry_seeds_from_wild_strawberry"
+    }
+  ]
+}

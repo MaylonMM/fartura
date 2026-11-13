@@ -1,0 +1,12 @@
+{
+  "name": "Floor Barbecue Grill",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:barbecue_grill_floor",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:barbecue_grill_floor"
+    }
+  ]
+}

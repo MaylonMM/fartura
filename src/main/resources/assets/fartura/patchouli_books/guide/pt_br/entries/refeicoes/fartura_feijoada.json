@@ -1,0 +1,14 @@
+{
+  "name": "Feijoada",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:feijoada",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:feijoada",
+      "title": "Feijoada",
+      "text": "Feita na panela com carne seca, linguiça, porco cozido, feijão, arroz e farinhas."
+    }
+  ]
+}

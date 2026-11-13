@@ -1,0 +1,12 @@
+{
+  "name": "Faca de Ametista",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:amethyst_knife",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:amethyst_knife"
+    }
+  ]
+}

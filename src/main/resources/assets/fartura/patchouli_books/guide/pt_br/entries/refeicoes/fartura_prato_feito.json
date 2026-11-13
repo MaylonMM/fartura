@@ -1,0 +1,14 @@
+{
+  "name": "Arroz, Feijão, Bife e Fritas",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:prato_feito",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:prato_feito",
+      "title": "Arroz, Feijão, Bife e Fritas",
+      "text": "Feito na panela com carne cozida, batata frita, arroz e feijão."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Coffee",
+  "category": "fartura:culturas",
+  "icon": "fartura:coffee_bean",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Coffee is a shade plant whose beans are roasted and ground to make Brazil's most traditional drink.$(br2)Found in: Forest, Jungle, Sparse Jungle and Bamboo Jungle."
+    }
+  ]
+}

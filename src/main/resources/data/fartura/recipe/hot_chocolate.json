@@ -1,0 +1,22 @@
+{
+  "type": "fartura:kettle",
+  "pattern": [
+    "CL",
+    "F "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "F": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "fartura:hot_chocolate",
+    "count": 1
+  }
+}

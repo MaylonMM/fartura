@@ -1,0 +1,14 @@
+{
+  "name": "Corn Curau",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:corn_curau",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:corn_curau",
+      "title": "Corn Curau",
+      "text": "Made in the pot with corn flour, sugar and milk."
+    }
+  ]
+}

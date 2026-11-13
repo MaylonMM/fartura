@@ -1,0 +1,16 @@
+{
+  "name": "Rice",
+  "category": "fartura:culturas",
+  "icon": "fartura:rice",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rice is the grain that accompanies almost every Brazilian meal. It grows in waterlogged areas, such as river banks.$(br2)Found in: next to rivers."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:rice_from_wild_rice"
+    }
+  ]
+}

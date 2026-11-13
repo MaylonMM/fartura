@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    "MOC",
+    "BBG"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:apple"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    },
+    "G": {
+      "item": "fartura:corn_kernels"
+    }
+  },
+  "result": {
+    "id": "fartura:salada_maionese",
+    "count": 1
+  }
+}

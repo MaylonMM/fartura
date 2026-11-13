@@ -1,0 +1,20 @@
+{
+  "name": "Tomato",
+  "category": "fartura:culturas",
+  "icon": "fartura:tomato",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Tomatoes are the base of sauces, salads and pasta with tomato sauce.$(br2)Found in: Tropical, Savanna, Sparse Jungle and Meadow."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:tomato_seeds_from_tomato"
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:tomato_seeds_from_wild_tomato"
+    }
+  ]
+}

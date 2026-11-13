@@ -1,0 +1,12 @@
+{
+  "name": "Suco de Maracujá",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:maracuja_juice",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:maracuja_juice"
+    }
+  ]
+}

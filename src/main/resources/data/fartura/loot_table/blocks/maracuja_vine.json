@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fartura:maracuja",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {"type": "minecraft:uniform", "min": 1.0, "max": 3.0},
+              "add": false
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "fartura:maracuja_vine",
+              "properties": {"age": "3"}
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

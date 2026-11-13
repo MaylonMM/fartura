@@ -1,0 +1,11 @@
+{
+  "type": "fartura:frigideira",
+  "ingredient": {
+    "item": "fartura:cassava_flour"
+  },
+  "result": {
+    "id": "fartura:tapioca_flour",
+    "count": 1
+  },
+  "cookingtime": 200
+}

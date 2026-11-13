@@ -1,0 +1,14 @@
+{
+  "name": "Dried Beef Escondidinho",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:dried_beef_escondidinho",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:dried_beef_escondidinho",
+      "title": "Dried Beef Escondidinho",
+      "text": "Made in the pot with cheese, cassava and dried beef."
+    }
+  ]
+}

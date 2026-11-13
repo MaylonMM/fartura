@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "flakes=1": {
+      "model": "fartura:block/cobblestone_flake_1"
+    },
+    "flakes=2": {
+      "model": "fartura:block/cobblestone_flake_2"
+    },
+    "flakes=3": {
+      "model": "fartura:block/cobblestone_flake_3"
+    },
+    "flakes=4": {
+      "model": "fartura:block/cobblestone_flake_4"
+    }
+  }
+}

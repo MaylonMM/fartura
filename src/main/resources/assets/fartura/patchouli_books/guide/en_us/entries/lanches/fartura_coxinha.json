@@ -1,0 +1,14 @@
+{
+  "name": "Coxinha",
+  "category": "fartura:lanches",
+  "icon": "fartura:coxinha",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:coxinha",
+      "title": "Coxinha",
+      "text": "Made in the pot with wheat dough and cooked chicken."
+    }
+  ]
+}

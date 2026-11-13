@@ -1,0 +1,12 @@
+{
+  "name": "Morango do Amor",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:candied_strawberry",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:candied_strawberry"
+    }
+  ]
+}

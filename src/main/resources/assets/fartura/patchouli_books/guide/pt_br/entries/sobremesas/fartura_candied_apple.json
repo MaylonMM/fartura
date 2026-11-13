@@ -1,0 +1,12 @@
+{
+  "name": "Maçã do Amor",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:candied_apple",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:candied_apple"
+    }
+  ]
+}

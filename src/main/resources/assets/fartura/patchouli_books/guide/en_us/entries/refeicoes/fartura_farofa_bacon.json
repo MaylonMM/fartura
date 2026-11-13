@@ -1,0 +1,14 @@
+{
+  "name": "Bacon and Sausage Farofa",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:farofa_bacon",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:farofa_bacon",
+      "title": "Bacon and Sausage Farofa",
+      "text": "Made in the pot with cooked pork, cooked sausage and flours."
+    }
+  ]
+}

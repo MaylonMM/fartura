@@ -1,0 +1,12 @@
+{
+  "name": "Bolo de Milho",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:corn_cake",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:corn_cake"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Lasca de Pedregulho",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:cobblestone_flake",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:cobblestone_flake"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Pilão de Pedra",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:stone_mortar",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:stone_mortar"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Estrogonofe, Arroz e Batata Palha",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:chicken_stroganoff",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:chicken_stroganoff",
+      "title": "Estrogonofe, Arroz e Batata Palha",
+      "text": "Feito na panela com frango, leite, tomate, arroz e batata."
+    }
+  ]
+}

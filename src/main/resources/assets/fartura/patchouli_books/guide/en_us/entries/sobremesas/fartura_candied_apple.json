@@ -1,0 +1,12 @@
+{
+  "name": "Candied Apple",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:candied_apple",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:candied_apple"
+    }
+  ]
+}

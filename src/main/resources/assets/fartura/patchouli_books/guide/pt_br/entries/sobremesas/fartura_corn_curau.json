@@ -1,0 +1,14 @@
+{
+  "name": "Curau de Milho",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:corn_curau",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:corn_curau",
+      "title": "Curau de Milho",
+      "text": "Feito na panela com farinha de milho, açúcar e leite."
+    }
+  ]
+}

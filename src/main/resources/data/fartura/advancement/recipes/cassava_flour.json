@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "has_cassava": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fartura:cassava"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "fartura:cassava_flour"
+    ]
+  }
+}

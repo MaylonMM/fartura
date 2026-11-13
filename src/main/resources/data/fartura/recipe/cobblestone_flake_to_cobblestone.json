@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    },
+    {
+      "item": "fartura:cobblestone_flake"
+    }
+  ],
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 1
+  }
+}

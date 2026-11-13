@@ -1,0 +1,16 @@
+{
+  "name": "Mandioca",
+  "category": "fartura:culturas",
+  "icon": "fartura:cassava",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A mandioca é uma raiz muito consumida no Brasil. Dela se faz a farinha e a tapioca, que são a base de muitas receitas.$(br2)Encontrada em: Savana, Platô da Savana, Savana Ventosa, Selva Esparsa e Selva."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:cassava_from_wild_cassava"
+    }
+  ]
+}

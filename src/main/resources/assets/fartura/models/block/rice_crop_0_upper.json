@@ -1,0 +1,9 @@
+{
+  "parent": "fartura:block/rice_tall_upper",
+  "textures": {
+    "side_north": "fartura:block/rice_crop_0_upper",
+    "side_south": "fartura:block/rice_crop_0_upper",
+    "side_west": "fartura:block/rice_crop_0_upper",
+    "side_east": "fartura:block/rice_crop_0_upper"
+  }
+}

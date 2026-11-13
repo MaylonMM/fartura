@@ -1,0 +1,16 @@
+{
+  "name": "Peanut",
+  "category": "fartura:culturas",
+  "icon": "fartura:peanut",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Peanuts grow underground and are used in sweets like paçoca.$(br2)Found in: Savanna."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:peanut_from_wild_peanut"
+    }
+  ]
+}

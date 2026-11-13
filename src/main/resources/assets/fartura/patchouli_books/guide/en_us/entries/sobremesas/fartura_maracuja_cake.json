@@ -1,0 +1,12 @@
+{
+  "name": "Passion Fruit Cake",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:maracuja_cake",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:maracuja_cake"
+    }
+  ]
+}

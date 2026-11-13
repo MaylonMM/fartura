@@ -1,0 +1,16 @@
+{
+  "name": "Bean",
+  "category": "fartura:culturas",
+  "icon": "fartura:bean",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Beans are an essential side of the Brazilian table and the main ingredient of feijoada.$(br2)Found in: Tropical, Savanna, Forest, Windswept Forest, Sparse Jungle and Meadow."
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:bean_from_wild_bean"
+    }
+  ]
+}

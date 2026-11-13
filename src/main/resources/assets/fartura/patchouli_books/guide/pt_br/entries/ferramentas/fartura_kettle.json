@@ -1,0 +1,12 @@
+{
+  "name": "Chaleira",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:kettle",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:kettle"
+    }
+  ]
+}

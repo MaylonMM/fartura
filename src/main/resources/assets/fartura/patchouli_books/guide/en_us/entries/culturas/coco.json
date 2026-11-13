@@ -1,0 +1,28 @@
+{
+  "name": "Coconut",
+  "category": "fartura:culturas",
+  "icon": "fartura:coconut",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Coconuts are typical of tropical beaches. You can drink the water from the green coconut or dry it to make other recipes.$(br2)Found in: Beach and Snowy Beach."
+          },
+          {
+            "type": "patchouli:smelting",
+            "recipe": "fartura:dry_coconut_smelting"
+          },
+          {
+            "type": "patchouli:smoking",
+            "recipe": "fartura:dry_coconut_smoking"
+          },
+          {
+            "type": "patchouli:campfire",
+            "recipe": "fartura:dry_coconut_campfire"
+          },
+          {
+            "type": "patchouli:crafting",
+            "recipe": "fartura:coconut_sapling"
+    }
+  ]
+}

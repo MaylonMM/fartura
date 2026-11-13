@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FQ",
+    "FF"
+  ],
+  "key": {
+    "F": {
+      "item": "fartura:tapioca_flour"
+    },
+    "Q": {
+      "tag": "c:cheeses"
+    }
+  },
+  "result": {
+    "id": "fartura:cheese_tapioca",
+    "count": 1
+  }
+}

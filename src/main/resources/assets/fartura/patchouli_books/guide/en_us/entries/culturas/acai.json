@@ -1,0 +1,12 @@
+{
+  "name": "Açaí",
+  "category": "fartura:culturas",
+  "icon": "fartura:acai",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Açaí is a purple fruit from the humid forests of the Amazon, it grows high up in the trees.$(br2)Found in: Jungle, Sparse Jungle and Bamboo Jungle."
+    }
+  ]
+}

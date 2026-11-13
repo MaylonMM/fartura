@@ -1,0 +1,14 @@
+{
+  "name": "Coelho Frito",
+  "category": "fartura:refeicoes",
+  "icon": "minecraft:cooked_rabbit",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:cooked_rabbit",
+      "title": "Coelho Frito",
+      "text": "Feito na frigideira com coelho cru."
+    }
+  ]
+}

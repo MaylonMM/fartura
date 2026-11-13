@@ -64,6 +64,7 @@ public class TomatoCropBlock extends BushBlock implements BonemealableBlock {
             return InteractionResult.PASS;
         }
         if (!level.isClientSide) {
+            level.levelEvent(2001, pos, Block.getId(state));
             popResource(level, pos, new ItemStack(ModItems.TOMATO.get(), rollTomatoCount(level.random)));
             level.setBlock(pos, state.setValue(AGE, 0), 2);
         }

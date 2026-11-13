@@ -1,0 +1,12 @@
+{
+  "name": "Açaí",
+  "category": "fartura:culturas",
+  "icon": "fartura:acai",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O açaí é uma fruta roxa das florestas úmidas da Amazônia, ele cresce no alto das árvores.$(br2)Encontrado em: Selva, Selva Esparsa e Selva de Bambu."
+    }
+  ]
+}

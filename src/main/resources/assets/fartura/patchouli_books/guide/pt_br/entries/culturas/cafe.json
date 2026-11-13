@@ -1,0 +1,12 @@
+{
+  "name": "Café",
+  "category": "fartura:culturas",
+  "icon": "fartura:coffee_bean",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O café é uma planta de sombra, cujos grãos são torrados e moídos para preparar a bebida mais tradicional do Brasil.$(br2)Encontrado em: Floresta, Selva, Selva Esparsa e Selva de Bambu."
+    }
+  ]
+}

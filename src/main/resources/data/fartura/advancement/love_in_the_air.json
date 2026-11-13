@@ -1,8 +1,15 @@
 {
-  "parent": "fartura:good_smell",
+  "parent": "fartura:balanced_meal",
   "criteria": {
     "ate_candied_apple": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fartura:candied_apple"
+          ]
+        }
+      }
     }
   },
   "display": {

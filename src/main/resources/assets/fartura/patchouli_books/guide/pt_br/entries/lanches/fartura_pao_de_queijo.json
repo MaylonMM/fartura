@@ -1,0 +1,14 @@
+{
+  "name": "Pão de Queijo",
+  "category": "fartura:lanches",
+  "icon": "fartura:pao_de_queijo",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:pao_de_queijo",
+      "title": "Pão de Queijo",
+      "text": "Feito na panela com queijo, ovo, leite e farinha de tapioca."
+    }
+  ]
+}

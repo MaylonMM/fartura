@@ -1,0 +1,14 @@
+{
+  "name": "Chocolate Quente",
+  "category": "fartura:bebidas_quentes",
+  "icon": "fartura:hot_chocolate",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:hot_chocolate",
+      "title": "Chocolate Quente",
+      "text": "Feito na Chaleira com Cacau, Leite e Garrafa de Vidro."
+    }
+  ]
+}

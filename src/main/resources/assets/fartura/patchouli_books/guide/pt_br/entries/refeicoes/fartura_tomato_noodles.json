@@ -1,0 +1,14 @@
+{
+  "name": "Noodles de Tomate",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:tomato_noodles",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:tomato_noodles",
+      "title": "Noodles de Tomate",
+      "text": "Feito na panela com tomate, massa de trigo e água."
+    }
+  ]
+}

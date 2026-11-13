@@ -1,0 +1,12 @@
+{
+  "name": "Passion Fruit Juice",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:maracuja_juice",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:maracuja_juice"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Farinha de Mandioca",
+  "category": "fartura:lanches",
+  "icon": "fartura:cassava_flour",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:cassava_flour",
+      "title": "Farinha de Mandioca",
+      "text": "Feita no pilão com mandioca."
+    }
+  ]
+}

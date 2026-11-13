@@ -1,0 +1,12 @@
+{
+  "name": "Meals",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:feijoada",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Main dishes that fill you up, like feijoada, made with beans and meats, and the rice that goes with almost everything.$(br2)Use a pot to cook most of these recipes."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LA",
+    "F "
+  ],
+  "key": {
+    "L": {
+      "item": "fartura:lime"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:lemonade",
+    "count": 1
+  }
+}

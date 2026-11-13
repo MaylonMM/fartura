@@ -1,0 +1,14 @@
+{
+  "name": "Escondidinho de Carne Seca",
+  "category": "fartura:refeicoes",
+  "icon": "fartura:dried_beef_escondidinho",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "fartura:dried_beef_escondidinho",
+      "title": "Escondidinho de Carne Seca",
+      "text": "Feito na panela com queijo, mandioca e carne seca."
+    }
+  ]
+}

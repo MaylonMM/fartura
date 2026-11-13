@@ -1,0 +1,12 @@
+{
+  "name": "Leite com Chocolate",
+  "category": "fartura:bebidas_frias",
+  "icon": "fartura:chocolate_milk",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:chocolate_milk"
+    }
+  ]
+}

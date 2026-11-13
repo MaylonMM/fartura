@@ -1,0 +1,12 @@
+{
+  "name": "Raw Sausage Skewer",
+  "category": "fartura:lanches",
+  "icon": "fartura:raw_sausage_skewer",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_sausage_skewer"
+    }
+  ]
+}

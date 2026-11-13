@@ -1,0 +1,12 @@
+{
+  "name": "Candied Strawberry",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:candied_strawberry",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:candied_strawberry"
+    }
+  ]
+}

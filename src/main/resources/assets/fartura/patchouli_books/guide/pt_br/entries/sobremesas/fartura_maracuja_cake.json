@@ -1,0 +1,12 @@
+{
+  "name": "Bolo de Maracujá",
+  "category": "fartura:sobremesas",
+  "icon": "fartura:maracuja_cake",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:maracuja_cake"
+    }
+  ]
+}

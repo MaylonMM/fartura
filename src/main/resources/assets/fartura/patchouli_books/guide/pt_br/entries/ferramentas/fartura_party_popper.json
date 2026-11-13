@@ -1,0 +1,12 @@
+{
+  "name": "Estalinho",
+  "category": "fartura:ferramentas",
+  "icon": "fartura:party_popper",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:party_popper"
+    }
+  ]
+}
