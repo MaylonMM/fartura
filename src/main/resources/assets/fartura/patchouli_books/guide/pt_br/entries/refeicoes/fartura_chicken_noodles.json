@@ -1,14 +1,14 @@
 {
-  "name": "Noodles de Galinha Caipira",
+  "name": "Noodles de Galinha",
   "category": "fartura:refeicoes",
   "icon": "fartura:chicken_noodles",
-  "sortnum": 18,
+  "sortnum": 12,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/chicken_noodles",
       "title": "Noodles de Galinha Caipira",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

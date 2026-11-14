@@ -1,14 +1,14 @@
 {
-  "name": "Dried Beef Escondidinho",
+  "name": "Escondidinho",
   "category": "fartura:refeicoes",
   "icon": "fartura:dried_beef_escondidinho",
-  "sortnum": 7,
+  "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/dried_beef_escondidinho",
       "title": "Dried Beef Escondidinho",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

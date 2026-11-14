@@ -2,13 +2,13 @@
   "name": "Cheese Bread",
   "category": "fartura:lanches",
   "icon": "fartura:pao_de_queijo",
-  "sortnum": 2,
+  "sortnum": 14,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:pao_de_queijo",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/pao_de_queijo",
       "title": "Cheese Bread",
-      "text": "Made in the pot with cheese, egg, milk and tapioca flour."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

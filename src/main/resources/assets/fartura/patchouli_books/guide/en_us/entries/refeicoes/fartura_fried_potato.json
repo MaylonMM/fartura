@@ -2,7 +2,7 @@
   "name": "Fried Potato",
   "category": "fartura:refeicoes",
   "icon": "fartura:fried_potato",
-  "sortnum": 15,
+  "sortnum": 2,
   "pages": [
     {
       "type": "patchouli:spotlight",

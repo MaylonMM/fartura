@@ -1,14 +1,14 @@
 {
-  "name": "Country Chicken Noodles",
+  "name": "Chicken Noodles",
   "category": "fartura:refeicoes",
   "icon": "fartura:chicken_noodles",
-  "sortnum": 4,
+  "sortnum": 12,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/chicken_noodles",
       "title": "Country Chicken Noodles",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

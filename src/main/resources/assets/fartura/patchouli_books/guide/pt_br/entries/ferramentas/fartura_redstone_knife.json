@@ -5,6 +5,10 @@
   "sortnum": 12,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Pode ser usada na tábua de corte ou como arma"
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:redstone_knife"
     }

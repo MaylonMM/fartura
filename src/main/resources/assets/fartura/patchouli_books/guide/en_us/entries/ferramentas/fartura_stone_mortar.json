@@ -5,6 +5,10 @@
   "sortnum": 16,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Used to process some foods."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:stone_mortar"
     }

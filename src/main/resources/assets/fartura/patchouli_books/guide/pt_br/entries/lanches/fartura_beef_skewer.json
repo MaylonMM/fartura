@@ -1,0 +1,28 @@
+{
+  "name": "Espetinho de Carne",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_beef_skewer",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_beef_skewer"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_beef_skewer_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_beef_skewer_smoking"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "É possível assar na churrasqueira também"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_beef_skewer_campfire"
+    }
+  ]
+}

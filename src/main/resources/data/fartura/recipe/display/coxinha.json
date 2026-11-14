@@ -1,0 +1,20 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    " M ",
+    "MFM",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "item": "fartura:wheat_dough"
+    },
+    "F": {
+      "item": "minecraft:cooked_chicken"
+    }
+  },
+  "result": {
+    "id": "fartura:coxinha",
+    "count": 4
+  }
+}

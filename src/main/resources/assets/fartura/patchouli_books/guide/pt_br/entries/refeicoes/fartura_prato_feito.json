@@ -1,14 +1,14 @@
 {
-  "name": "Arroz, Feijão, Bife e Fritas",
+  "name": "Prato Feito",
   "category": "fartura:refeicoes",
   "icon": "fartura:prato_feito",
-  "sortnum": 2,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/prato_feito",
       "title": "Arroz, Feijão, Bife e Fritas",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

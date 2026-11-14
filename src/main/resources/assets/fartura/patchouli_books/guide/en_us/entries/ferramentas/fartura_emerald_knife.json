@@ -5,6 +5,10 @@
   "sortnum": 6,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Can be used on the cutting board or as a weapon."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:emerald_knife"
     }

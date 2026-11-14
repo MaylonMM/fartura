@@ -2,13 +2,13 @@
   "name": "Noodles de Tomate",
   "category": "fartura:refeicoes",
   "icon": "fartura:tomato_noodles",
-  "sortnum": 19,
+  "sortnum": 13,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/tomato_noodles",
       "title": "Noodles de Tomate",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

@@ -5,10 +5,10 @@
   "sortnum": 1,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:coffee",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/coffee",
       "title": "Café",
-      "text": "Feito na Chaleira com Grãos de Café e Garrafa de Água (poção)."
+      "text": "Receita feita na Chaleira com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

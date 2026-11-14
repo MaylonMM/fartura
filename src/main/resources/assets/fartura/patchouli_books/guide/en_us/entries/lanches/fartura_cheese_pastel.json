@@ -2,7 +2,7 @@
   "name": "Cheese Pastel",
   "category": "fartura:lanches",
   "icon": "fartura:cheese_pastel",
-  "sortnum": 3,
+  "sortnum": 16,
   "pages": [
     {
       "type": "patchouli:crafting",

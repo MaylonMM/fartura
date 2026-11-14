@@ -5,6 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Crouch with an empty hand to place charcoal inside the grill. You can place a pot on it or cook food directly on it."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:barbecue_grill"
     }

@@ -5,10 +5,10 @@
   "sortnum": 3,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:brigadeiro",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/brigadeiro",
       "title": "Brigadeiro",
-      "text": "Made in the pot with milk, cocoa, sugar and paper."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

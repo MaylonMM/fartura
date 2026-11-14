@@ -2,13 +2,13 @@
   "name": "Coxinha",
   "category": "fartura:lanches",
   "icon": "fartura:coxinha",
-  "sortnum": 12,
+  "sortnum": 1,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:coxinha",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/coxinha",
       "title": "Coxinha",
-      "text": "Made in the pot with wheat dough and cooked chicken."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

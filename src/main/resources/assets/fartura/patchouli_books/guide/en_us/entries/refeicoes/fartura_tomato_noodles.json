@@ -2,13 +2,13 @@
   "name": "Tomato Noodles",
   "category": "fartura:refeicoes",
   "icon": "fartura:tomato_noodles",
-  "sortnum": 23,
+  "sortnum": 13,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/tomato_noodles",
       "title": "Tomato Noodles",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

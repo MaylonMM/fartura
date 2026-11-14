@@ -2,13 +2,13 @@
   "name": "Cuscuz",
   "category": "fartura:refeicoes",
   "icon": "fartura:cuscuz",
-  "sortnum": 9,
+  "sortnum": 4,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/cuscuz",
       "title": "Cuscuz",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

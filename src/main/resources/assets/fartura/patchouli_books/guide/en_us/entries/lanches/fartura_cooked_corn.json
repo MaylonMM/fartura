@@ -2,7 +2,7 @@
   "name": "Cooked Corn",
   "category": "fartura:lanches",
   "icon": "fartura:cooked_corn",
-  "sortnum": 7,
+  "sortnum": 13,
   "pages": [
     {
       "type": "patchouli:smelting",

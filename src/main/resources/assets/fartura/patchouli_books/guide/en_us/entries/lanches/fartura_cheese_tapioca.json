@@ -2,7 +2,7 @@
   "name": "Cheese Tapioca",
   "category": "fartura:lanches",
   "icon": "fartura:cheese_tapioca",
-  "sortnum": 4,
+  "sortnum": 20,
   "pages": [
     {
       "type": "patchouli:crafting",

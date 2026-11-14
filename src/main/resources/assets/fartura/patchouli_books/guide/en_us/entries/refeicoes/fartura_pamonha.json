@@ -2,13 +2,13 @@
   "name": "Pamonha",
   "category": "fartura:refeicoes",
   "icon": "fartura:pamonha",
-  "sortnum": 19,
+  "sortnum": 14,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/pamonha",
       "title": "Pamonha",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

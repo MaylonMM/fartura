@@ -5,10 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:coffee_with_milk",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/coffee_with_milk",
       "title": "Café com Leite",
-      "text": "Feito na Chaleira com Grãos de Café, Leite e Garrafa de Água (poção)."
+      "text": "Receita feita na Chaleira com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

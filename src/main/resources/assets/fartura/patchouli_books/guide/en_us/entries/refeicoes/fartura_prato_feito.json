@@ -1,14 +1,14 @@
 {
-  "name": "Rice, Beans, Steak and Fries",
+  "name": "Brazilian Plate",
   "category": "fartura:refeicoes",
   "icon": "fartura:prato_feito",
-  "sortnum": 21,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/prato_feito",
       "title": "Rice, Beans, Steak and Fries",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

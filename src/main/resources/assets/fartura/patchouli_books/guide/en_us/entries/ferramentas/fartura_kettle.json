@@ -5,6 +5,10 @@
   "sortnum": 10,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Place the kettle on top of a heat source, such as a barbecue grill or campfire, to make recipes."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:kettle"
     }

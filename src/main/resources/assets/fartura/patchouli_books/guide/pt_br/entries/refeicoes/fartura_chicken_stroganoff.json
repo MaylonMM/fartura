@@ -1,14 +1,14 @@
 {
-  "name": "Estrogonofe, Arroz e Batata Palha",
+  "name": "Estrogonofe",
   "category": "fartura:refeicoes",
   "icon": "fartura:chicken_stroganoff",
-  "sortnum": 11,
+  "sortnum": 6,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/chicken_stroganoff",
       "title": "Estrogonofe, Arroz e Batata Palha",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

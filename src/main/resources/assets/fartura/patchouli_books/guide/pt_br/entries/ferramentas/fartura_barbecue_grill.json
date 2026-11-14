@@ -5,6 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Agache com a mão vazia para colocar o carvão dentro da churrasqueira, é possível colocar uma panela ou assar alimentos diretamente nela"
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:barbecue_grill"
     }

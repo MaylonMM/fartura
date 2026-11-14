@@ -5,10 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:beijinho",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/beijinho",
       "title": "Beijinho",
-      "text": "Feito na panela com leite condensado, coco, açúcar e papel."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

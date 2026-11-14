@@ -2,7 +2,7 @@
   "name": "Pastel de Carne",
   "category": "fartura:lanches",
   "icon": "fartura:meat_pastel",
-  "sortnum": 17,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:crafting",

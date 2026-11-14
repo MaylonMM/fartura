@@ -583,7 +583,6 @@ public final class ModItems {
             () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(5)
                     .saturationModifier(0.3f)
-                    .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200), 0.75f)
                     .build())));
 
     public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",

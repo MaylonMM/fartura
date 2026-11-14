@@ -5,10 +5,10 @@
   "sortnum": 7,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:corn_curau",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/corn_curau",
       "title": "Curau de Milho",
-      "text": "Feito na panela com farinha de milho, açúcar e leite."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

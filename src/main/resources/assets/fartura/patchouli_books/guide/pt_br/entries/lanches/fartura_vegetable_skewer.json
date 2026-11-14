@@ -1,0 +1,28 @@
+{
+  "name": "Espetinho de Vegetais",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_vegetable_skewer",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_vegetable_skewer"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_vegetable_skewer_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_vegetable_skewer_smoking"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "É possível assar na churrasqueira também"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_vegetable_skewer_campfire"
+    }
+  ]
+}

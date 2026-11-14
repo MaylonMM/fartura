@@ -2,7 +2,7 @@
   "name": "Cheese",
   "category": "fartura:lanches",
   "icon": "fartura:cheese",
-  "sortnum": 25,
+  "sortnum": 18,
   "pages": [
     {
       "type": "patchouli:crafting",

@@ -5,6 +5,10 @@
   "sortnum": 1,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Coloque a chaleira em cima de uma fonte de calor, como uma churrasqueira ou fogueira, para fazer as receitas"
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:kettle"
     }

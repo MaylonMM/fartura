@@ -5,10 +5,10 @@
   "sortnum": 3,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:hot_chocolate",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/hot_chocolate",
       "title": "Hot Chocolate",
-      "text": "Made in the Kettle with Cocoa, Milk and a Glass Bottle."
+      "text": "Recipe made in the Kettle with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "name": "Farinha de Tapioca",
   "category": "fartura:lanches",
   "icon": "fartura:tapioca_flour",
-  "sortnum": 23,
+  "sortnum": 10,
   "pages": [
     {
       "type": "patchouli:spotlight",

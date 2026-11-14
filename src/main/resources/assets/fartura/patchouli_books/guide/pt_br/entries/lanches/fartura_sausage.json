@@ -1,0 +1,28 @@
+{
+  "name": "Linguiça",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_sausage",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_sausage"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_sausage_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_sausage_smoking"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "É possível assar na churrasqueira também"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_sausage_campfire"
+    }
+  ]
+}

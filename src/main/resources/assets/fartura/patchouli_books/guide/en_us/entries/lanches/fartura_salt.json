@@ -2,7 +2,7 @@
   "name": "Salt",
   "category": "fartura:lanches",
   "icon": "fartura:salt",
-  "sortnum": 24,
+  "sortnum": 19,
   "pages": [
     {
       "type": "patchouli:smelting",

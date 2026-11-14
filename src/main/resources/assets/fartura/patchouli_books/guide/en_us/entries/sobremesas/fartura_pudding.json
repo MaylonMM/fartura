@@ -5,10 +5,10 @@
   "sortnum": 12,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:pudding",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/pudding",
       "title": "Pudding",
-      "text": "Made in the pot with egg, sugar and milk."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

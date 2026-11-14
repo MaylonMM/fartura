@@ -2,7 +2,7 @@
   "name": "Dried Beef",
   "category": "fartura:refeicoes",
   "icon": "fartura:dried_beef",
-  "sortnum": 6,
+  "sortnum": 3,
   "pages": [
     {
       "type": "patchouli:crafting",

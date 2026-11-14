@@ -2,7 +2,7 @@
   "name": "Popcorn",
   "category": "fartura:lanches",
   "icon": "fartura:popcorn",
-  "sortnum": 14,
+  "sortnum": 17,
   "pages": [
     {
       "type": "patchouli:smelting",

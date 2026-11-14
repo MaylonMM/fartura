@@ -2,13 +2,13 @@
   "name": "Farofa de Ovo",
   "category": "fartura:refeicoes",
   "icon": "fartura:farofa_ovo",
-  "sortnum": 13,
+  "sortnum": 8,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/farofa_ovo",
       "title": "Farofa de Ovo",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

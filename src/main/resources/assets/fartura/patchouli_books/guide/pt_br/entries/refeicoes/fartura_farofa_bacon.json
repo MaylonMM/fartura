@@ -1,14 +1,14 @@
 {
-  "name": "Farofa de Bacon e Linguiça",
+  "name": "Farofa de Bacon",
   "category": "fartura:refeicoes",
   "icon": "fartura:farofa_bacon",
-  "sortnum": 12,
+  "sortnum": 7,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/farofa_bacon",
       "title": "Farofa de Bacon e Linguiça",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

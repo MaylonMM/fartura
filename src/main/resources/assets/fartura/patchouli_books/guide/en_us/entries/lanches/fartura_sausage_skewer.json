@@ -1,0 +1,28 @@
+{
+  "name": "Sausage Skewer",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_sausage_skewer",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_sausage_skewer"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_sausage_skewer_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_sausage_skewer_smoking"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It can also be roasted on the barbecue grill."
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_sausage_skewer_campfire"
+    }
+  ]
+}

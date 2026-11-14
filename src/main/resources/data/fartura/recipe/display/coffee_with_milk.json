@@ -1,0 +1,28 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "CL",
+    "F "
+  ],
+  "key": {
+    "C": {
+      "item": "fartura:coffee_bean"
+    },
+    "L": {
+      "tag": "c:milk"
+    },
+    "F": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "fartura:coffee_with_milk",
+    "count": 1
+  }
+}

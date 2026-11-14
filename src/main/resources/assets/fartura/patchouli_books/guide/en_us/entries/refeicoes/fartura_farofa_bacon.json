@@ -1,14 +1,14 @@
 {
-  "name": "Bacon and Sausage Farofa",
+  "name": "Bacon Farofa",
   "category": "fartura:refeicoes",
   "icon": "fartura:farofa_bacon",
-  "sortnum": 1,
+  "sortnum": 7,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/farofa_bacon",
       "title": "Bacon and Sausage Farofa",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

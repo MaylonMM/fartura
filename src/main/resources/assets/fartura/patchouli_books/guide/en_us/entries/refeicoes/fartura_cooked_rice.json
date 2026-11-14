@@ -2,13 +2,13 @@
   "name": "Cooked Rice",
   "category": "fartura:refeicoes",
   "icon": "fartura:cooked_rice",
-  "sortnum": 3,
+  "sortnum": 1,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/cooked_rice",
       "title": "Cooked Rice",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

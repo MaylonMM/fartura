@@ -5,10 +5,10 @@
   "sortnum": 1,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:coffee",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/coffee",
       "title": "Coffee",
-      "text": "Made in the Kettle with Coffee Beans and a Water Bottle (potion)."
+      "text": "Recipe made in the Kettle with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

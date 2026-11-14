@@ -1,6 +1,6 @@
 {
   "name": "Meals",
-  "description": "Main dishes",
+  "description": "Main dishes of the mod. Some recipes are made at the Crafting Table and others in mod tools such as the Clay Pot",
   "icon": "fartura:feijoada",
   "sortnum": 1
 }

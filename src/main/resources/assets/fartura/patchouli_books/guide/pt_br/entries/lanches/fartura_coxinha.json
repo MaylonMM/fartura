@@ -5,10 +5,10 @@
   "sortnum": 1,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:coxinha",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/coxinha",
       "title": "Coxinha",
-      "text": "Feita na panela com massa de trigo e frango cozido."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

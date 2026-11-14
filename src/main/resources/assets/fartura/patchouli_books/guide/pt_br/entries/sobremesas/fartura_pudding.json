@@ -5,10 +5,10 @@
   "sortnum": 12,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:pudding",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/pudding",
       "title": "Pudim",
-      "text": "Feito na panela com ovo, açúcar e leite."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

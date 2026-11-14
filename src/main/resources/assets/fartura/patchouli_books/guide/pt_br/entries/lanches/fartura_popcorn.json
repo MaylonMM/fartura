@@ -2,7 +2,7 @@
   "name": "Pipoca",
   "category": "fartura:lanches",
   "icon": "fartura:popcorn",
-  "sortnum": 19,
+  "sortnum": 17,
   "pages": [
     {
       "type": "patchouli:smelting",

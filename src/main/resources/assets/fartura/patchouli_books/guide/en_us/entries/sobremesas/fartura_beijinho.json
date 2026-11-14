@@ -5,10 +5,10 @@
   "sortnum": 2,
   "pages": [
     {
-      "type": "patchouli:spotlight",
-      "item": "fartura:beijinho",
+      "type": "patchouli:crafting",
+      "recipe": "fartura:display/beijinho",
       "title": "Beijinho",
-      "text": "Made in the pot with condensed milk, coconut, sugar and paper."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

@@ -2,13 +2,13 @@
   "name": "Pamonha",
   "category": "fartura:refeicoes",
   "icon": "fartura:pamonha",
-  "sortnum": 20,
+  "sortnum": 14,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/pamonha",
       "title": "Pamonha",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

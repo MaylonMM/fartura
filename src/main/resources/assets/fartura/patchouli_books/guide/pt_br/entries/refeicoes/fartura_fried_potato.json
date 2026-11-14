@@ -2,7 +2,7 @@
   "name": "Batata Frita",
   "category": "fartura:refeicoes",
   "icon": "fartura:fried_potato",
-  "sortnum": 4,
+  "sortnum": 2,
   "pages": [
     {
       "type": "patchouli:spotlight",

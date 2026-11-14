@@ -2,13 +2,13 @@
   "name": "Feijoada",
   "category": "fartura:refeicoes",
   "icon": "fartura:feijoada",
-  "sortnum": 14,
+  "sortnum": 9,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/feijoada",
       "title": "Feijoada",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

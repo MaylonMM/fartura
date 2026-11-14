@@ -2,13 +2,13 @@
   "name": "Macarronada",
   "category": "fartura:refeicoes",
   "icon": "fartura:pasta",
-  "sortnum": 17,
+  "sortnum": 11,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/pasta",
       "title": "Macarronada",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

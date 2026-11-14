@@ -2,13 +2,13 @@
   "name": "Cuscuz",
   "category": "fartura:refeicoes",
   "icon": "fartura:cuscuz",
-  "sortnum": 5,
+  "sortnum": 4,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/cuscuz",
       "title": "Cuscuz",
-      "text": "Made in the Clay Pot with heat underneath."
+      "text": "Recipe made in the Clay Pot with a heat source underneath.$(br2)Does not work in the Crafting Table"
     }
   ]
 }

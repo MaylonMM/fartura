@@ -1,14 +1,14 @@
 {
-  "name": "Macarrão com Carne Moída",
+  "name": "Macarrão com Carne",
   "category": "fartura:refeicoes",
   "icon": "fartura:beef_pasta",
-  "sortnum": 16,
+  "sortnum": 10,
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "fartura:display/beef_pasta",
       "title": "Macarrão com Carne Moída",
-      "text": "Feito na Panela de Barro com calor embaixo."
+      "text": "Receita feita na Panela de Barro com uma fonte de calor embaixo.$(br2)Não funciona na Bancada de Trabalho"
     }
   ]
 }

@@ -5,6 +5,10 @@
   "sortnum": 7,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Pode ser usada na tábua de corte ou como arma"
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "fartura:amethyst_knife"
     }

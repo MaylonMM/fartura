@@ -26,3 +26,14 @@ run-data
 # stonecutter: cache local
 .stonecutter
 repo
+
+# kotlin / editores
+.kotlin
+.vscode
+
+# logs e crash reports de execução
+*.log
+crash-reports
+
+# notas locais de desenvolvimento (não vão para o GitHub)
+DESENVOLVIMENTO.md

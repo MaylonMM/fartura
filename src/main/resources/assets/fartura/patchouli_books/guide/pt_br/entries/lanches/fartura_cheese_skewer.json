@@ -1,0 +1,28 @@
+{
+  "name": "Espetinho de Queijo Coalho",
+  "category": "fartura:lanches",
+  "icon": "fartura:cooked_cheese_skewer",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "fartura:raw_cheese_skewer"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "fartura:cooked_cheese_skewer_smelting"
+    },
+    {
+      "type": "patchouli:smoking",
+      "recipe": "fartura:cooked_cheese_skewer_smoking"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "É possível assar na churrasqueira também"
+    },
+    {
+      "type": "patchouli:campfire",
+      "recipe": "fartura:cooked_cheese_skewer_campfire"
+    }
+  ]
+}
