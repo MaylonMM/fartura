@@ -42,7 +42,7 @@ repositories {
 }
 
 base {
-    archivesName.set("${mod_id}_v${mod_version}_neoforge_mc${minecraft_version}")
+    archivesName.set("Fartura_v${mod_version}_neoforge_mc${minecraft_version}")
 }
 
 // A versão já está no nome do arquivo, então não a repete no sufixo.
