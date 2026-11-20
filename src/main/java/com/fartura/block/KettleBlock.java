@@ -60,7 +60,11 @@ public class KettleBlock extends BaseEntityBlock {
         if (!level.isClientSide()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity             instanceof KettleBlockEntity kettle) {
-                            player.openMenu(kettle, buf -> buf.writeBlockPos(pos));
+                            //? if neoforge {
+                player.openMenu(kettle, buf -> buf.writeBlockPos(pos));
+//?} else {
+                ((net.minecraft.server.level.ServerPlayer) player).openMenu(kettle, pos);
+//?}
             }
         }
         return InteractionResult.SUCCESS;

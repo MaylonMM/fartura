@@ -5,7 +5,7 @@
     "minecraft:soul_fire",
     "fartura:barbecue_grill",
     "fartura:barbecue_grill_floor",
-    "farmersdelight:stove",
-    "farm_and_charm:stove"
+    {"id": "farmersdelight:stove", "required": false},
+    {"id": "farm_and_charm:stove", "required": false}
   ]
 }

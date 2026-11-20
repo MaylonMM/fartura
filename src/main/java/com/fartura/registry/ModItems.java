@@ -5,7 +5,9 @@ import com.fartura.item.AcaiItem;
 import com.fartura.item.MaracujaItem;
 import com.fartura.item.BottleDrinkItem;
 import com.fartura.item.CoffeeBeanItem;
+//? if neoforge {
 import com.fartura.item.GuideBookItem;
+//?}
 import com.fartura.item.LimeItem;
 import com.fartura.item.OrangeItem;
 import com.fartura.item.ColoredKnifeItem;
@@ -25,8 +27,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredItem;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public final class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Fartura.MODID);
@@ -271,7 +278,11 @@ public final class ModItems {
             new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(1)
                     .saturationModifier(0.1f)
+                    //? if neoforge {
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0f)
+//?} else {
+                    .effect(new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0f)
+//?}
                     .build()));
 
     public static final DeferredItem<Item> DRIED_BEEF = ITEMS.registerSimpleItem("dried_beef",
@@ -447,7 +458,11 @@ public final class ModItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(4)
                     .saturationModifier(0.4f)
+                    //? if neoforge {
                     .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600), 0.3f)
+//?} else {
+                    .effect(new MobEffectInstance(MobEffects.HUNGER, 600), 0.3f)
+//?}
                     .build())));
 
     public static final DeferredItem<Item> COOKED_CHICKEN_SKEWER = ITEMS.register("cooked_chicken_skewer",
@@ -534,7 +549,11 @@ public final class ModItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(4)
                     .saturationModifier(0.2f)
+//? if neoforge {
                     .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+//?} else {
+                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+//?}
                     .build())));
 
     public static final DeferredItem<Item> CANDIED_APPLE = ITEMS.register("candied_apple",
@@ -589,7 +608,11 @@ public final class ModItems {
             () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(5)
                     .saturationModifier(0.3f)
+//? if neoforge {
                     .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+//?} else {
+                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1.0f)
+//?}
                     .build())));
 
     public static final DeferredItem<Item> COFFEE_WITH_MILK = ITEMS.register("coffee_with_milk",
@@ -598,8 +621,10 @@ public final class ModItems {
                     .saturationModifier(0.3f)
                     .build())));
 
+//? if neoforge {
     public static final DeferredItem<Item> GUIDE_BOOK = ITEMS.register("guide",
             () -> new GuideBookItem(new Item.Properties().stacksTo(1)));
+//?}
 
     public static final DeferredItem<Item> HOT_CHOCOLATE = ITEMS.register("hot_chocolate",
             () -> new BottleDrinkItem(new Item.Properties().food(new FoodProperties.Builder()

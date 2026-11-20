@@ -1,0 +1,27 @@
+{
+  "type": "fartura:mod_recipe",
+  "mod": "create",
+  "recipe": {
+    "type": "create:compacting",
+    "ingredients": [
+      {
+        "item": "fartura:peanut"
+      },
+      {
+        "item": "fartura:peanut"
+      },
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:sugar"
+      }
+    ],
+    "results": [
+      {
+        "id": "fartura:pacoca",
+        "count": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "fartura:mod_recipe",
+  "mod": "farm_and_charm",
+  "recipe": {
+    "type": "farm_and_charm:mincer",
+    "ingredient": {
+      "item": "fartura:cassava"
+    },
+    "recipe_type": "STONE",
+    "result": {
+      "id": "fartura:cassava_flour",
+      "count": 1
+    }
+  }
+}

@@ -10,8 +10,13 @@ import com.fartura.block.entity.StoneMortarBlockEntity;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredHolder;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =

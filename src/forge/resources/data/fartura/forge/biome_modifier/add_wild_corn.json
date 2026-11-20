@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:wild_corn_biomes",
+  "features": "fartura:wild_corn",
+  "step": "vegetal_decoration"
+}

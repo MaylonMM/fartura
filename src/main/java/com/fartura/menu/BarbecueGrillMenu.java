@@ -3,7 +3,7 @@ package com.fartura.menu;
 import com.fartura.block.entity.BarbecueGrillBlockEntity;
 import com.fartura.registry.ModMenus;
 
-import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -12,8 +12,13 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.SlotItemHandler;
+//?}
 
 public class BarbecueGrillMenu extends AbstractContainerMenu {
     private static final int PLAYER_INV_Y = 84;
@@ -23,7 +28,7 @@ public class BarbecueGrillMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     /** Construtor do cliente, usado ao abrir o menu pelo pacote. */
-    public BarbecueGrillMenu(int containerId, Inventory playerInventory, RegistryFriendlyByteBuf buf) {
+    public BarbecueGrillMenu(int containerId, Inventory playerInventory, FriendlyByteBuf buf) {
         this(containerId, playerInventory, new ItemStackHandler(1 + BarbecueGrillBlockEntity.GRILL_SLOTS), new SimpleContainerData(2));
     }
 
@@ -79,7 +84,7 @@ public class BarbecueGrillMenu extends AbstractContainerMenu {
                 if (!moveItemStackTo(stack, playerStart, playerEnd, true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (stack.getBurnTime(RecipeType.SMELTING) > 0) {
+            } else if (BarbecueGrillBlockEntity.getFuelBurnTime(stack) > 0) {
                 if (!moveItemStackTo(stack, fuelSlot, fuelSlot + 1, false)) {
                     return ItemStack.EMPTY;
                 }

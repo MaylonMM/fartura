@@ -20,10 +20,12 @@ import net.minecraft.world.level.Level;
  * Nunca combina, para a bancada de trabalho nao craftar o item.
  */
 public class PanelaDisplayRecipe extends ShapedRecipe {
+    private final ShapedRecipePattern displayPattern;
     private final ItemStack displayResult;
 
     public PanelaDisplayRecipe(ShapedRecipePattern pattern, ItemStack result) {
         super("", CraftingBookCategory.MISC, pattern, result);
+        this.displayPattern = pattern;
         this.displayResult = result;
     }
 
@@ -39,12 +41,12 @@ public class PanelaDisplayRecipe extends ShapedRecipe {
 
     public static final class Serializer implements RecipeSerializer<PanelaDisplayRecipe> {
         private static final MapCodec<PanelaDisplayRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-                ShapedRecipePattern.MAP_CODEC.forGetter(recipe -> recipe.pattern),
+                ShapedRecipePattern.MAP_CODEC.forGetter(recipe -> recipe.displayPattern),
                 ItemStack.STRICT_CODEC.fieldOf("result").forGetter(recipe -> recipe.displayResult)
         ).apply(instance, PanelaDisplayRecipe::new));
 
         private static final StreamCodec<RegistryFriendlyByteBuf, PanelaDisplayRecipe> STREAM_CODEC = StreamCodec.composite(
-                ShapedRecipePattern.STREAM_CODEC, recipe -> recipe.pattern,
+                ShapedRecipePattern.STREAM_CODEC, recipe -> recipe.displayPattern,
                 ItemStack.STREAM_CODEC, recipe -> recipe.displayResult,
                 PanelaDisplayRecipe::new
         );

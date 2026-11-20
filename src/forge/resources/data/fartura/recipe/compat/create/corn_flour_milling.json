@@ -1,0 +1,19 @@
+{
+  "type": "fartura:mod_recipe",
+  "mod": "create",
+  "recipe": {
+    "type": "create:milling",
+    "ingredients": [
+      {
+        "item": "fartura:corn_kernels"
+      }
+    ],
+    "processing_time": 100,
+    "results": [
+      {
+        "id": "fartura:corn_flour",
+        "count": 1
+      }
+    ]
+  }
+}

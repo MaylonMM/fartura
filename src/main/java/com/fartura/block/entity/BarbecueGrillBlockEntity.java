@@ -22,7 +22,11 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+//?}
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -42,9 +46,18 @@ public class BarbecueGrillBlockEntity extends BlockEntity implements MenuProvide
 
         @Override
         public boolean isItemValid(int slot, ItemStack stack) {
-            return slot == FUEL_SLOT && stack.getBurnTime(RecipeType.SMELTING) > 0;
+            return slot == FUEL_SLOT && getFuelBurnTime(stack) > 0;
         }
     };
+
+    // Forge returns -1 from ItemStack#getBurnTime for vanilla fuels; ForgeHooks resolves them.
+    public static int getFuelBurnTime(ItemStack stack) {
+        //? if neoforge {
+        return stack.getBurnTime(RecipeType.SMELTING);
+        //?} else {
+        return net.minecraftforge.common.ForgeHooks.getBurnTime(stack, RecipeType.SMELTING);
+        //?}
+    }
 
     private final int[] cookingProgress = new int[GRILL_SLOTS];
     private final int[] cookingTime = new int[GRILL_SLOTS];
@@ -116,7 +129,7 @@ public class BarbecueGrillBlockEntity extends BlockEntity implements MenuProvide
 
         if (!burning && (grill.hasFood() || panelaNeedsHeat(level, pos)) && grill.hasFuel()) {
             ItemStack fuel = grill.inventory.extractItem(FUEL_SLOT, 1, false);
-            int burnTime = fuel.getBurnTime(RecipeType.SMELTING);
+            int burnTime = getFuelBurnTime(fuel);
             grill.litDuration = burnTime;
             grill.litTime = burnTime;
             burning = true;

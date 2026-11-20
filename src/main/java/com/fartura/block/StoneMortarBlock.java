@@ -56,7 +56,11 @@ public class StoneMortarBlock extends BaseEntityBlock {
         if (!level.isClientSide()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity instanceof StoneMortarBlockEntity mortar) {
+                //? if neoforge {
                 player.openMenu(mortar, buf -> buf.writeBlockPos(pos));
+//?} else {
+                ((net.minecraft.server.level.ServerPlayer) player).openMenu(mortar, pos);
+//?}
             }
         }
         return InteractionResult.SUCCESS;

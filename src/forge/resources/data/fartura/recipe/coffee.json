@@ -1,0 +1,19 @@
+{
+  "type": "fartura:kettle",
+  "pattern": [
+    "C",
+    "F"
+  ],
+  "key": {
+    "C": {
+      "item": "fartura:coffee_bean"
+    },
+    "F": {
+      "type": "fartura:water_potion"
+    }
+  },
+  "result": {
+    "id": "fartura:coffee",
+    "count": 1
+  }
+}

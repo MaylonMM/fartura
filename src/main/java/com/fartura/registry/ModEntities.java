@@ -8,8 +8,13 @@ import com.fartura.entity.CobblestoneFlakeProjectile;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredHolder;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public final class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =

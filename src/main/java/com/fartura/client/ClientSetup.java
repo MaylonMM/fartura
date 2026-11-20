@@ -13,11 +13,13 @@ import com.fartura.registry.ModBlocks;
 import com.fartura.registry.ModEntities;
 import com.fartura.registry.ModMenus;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.level.FoliageColor;
+//? if neoforge {
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -25,8 +27,20 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+//?} else {
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+//?}
 
+//? if neoforge {
 @EventBusSubscriber(modid = Fartura.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+//?} else {
+@Mod.EventBusSubscriber(modid = Fartura.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+//?}
 public final class ClientSetup {
     private ClientSetup() {
     }
@@ -34,6 +48,9 @@ public final class ClientSetup {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
+            //? if forge {
+            registerMenuScreens();
+            //?}
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_CORN.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CORN_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_CROP.get(), RenderType.cutout());
@@ -89,6 +106,16 @@ public final class ClientSetup {
         }, ModBlocks.MARACUJA_VINE.get());
     }
 
+    //? if forge {
+    static void registerMenuScreens() {
+        MenuScreens.register(ModMenus.STONE_MORTAR.get(), StoneMortarScreen::new);
+        MenuScreens.register(ModMenus.BARBECUE_GRILL.get(), BarbecueGrillScreen::new);
+        MenuScreens.register(ModMenus.PANELA.get(), PanelaScreen::new);
+        MenuScreens.register(ModMenus.KETTLE.get(), KettleScreen::new);
+    }
+    //?}
+
+    //? if neoforge {
     @SubscribeEvent
     static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
         event.register(ModMenus.STONE_MORTAR.get(), StoneMortarScreen::new);
@@ -96,4 +123,5 @@ public final class ClientSetup {
         event.register(ModMenus.PANELA.get(), PanelaScreen::new);
         event.register(ModMenus.KETTLE.get(), KettleScreen::new);
     }
+    //?}
 }

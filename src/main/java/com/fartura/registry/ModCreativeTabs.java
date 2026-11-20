@@ -6,8 +6,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredHolder;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public final class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> TABS =
@@ -165,8 +170,10 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.QUARTZ_KNIFE.get());
                         output.accept(ModItems.REDSTONE_KNIFE.get());
 
+//? if neoforge {
                         // Guia
                         output.accept(ModItems.GUIDE_BOOK.get());
+//?}
 
                         // Pedra e Estalinho
                         output.accept(ModItems.PARTY_POPPER.get());

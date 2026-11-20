@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:acai_biomes",
+  "features": "fartura:acai_tree",
+  "step": "top_layer_modification"
+}
