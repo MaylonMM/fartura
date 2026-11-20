@@ -1,0 +1,54 @@
+// Configuração específica do NeoForge, aplicada pelo build.gradle.kts quando mod_loader=neoforge.
+// Groovy: os acessores tipados (runs, dependencies) não são gerados em scripts aplicados por apply(from).
+
+apply plugin: 'net.neoforged.gradle.userdev'
+
+def neo_version = project.property('neo_version')
+def jei_version = project.property('jei_version')
+def jade_version = project.property('jade_version')
+def patchouli_version = project.property('patchouli_version')
+def minecraft_version = project.property('minecraft_version')
+def mod_id = project.property('mod_id')
+
+runs {
+    configureEach {
+        // Recommended logging data for a userdev environment
+        systemProperty 'forge.logging.markers', 'REGISTRIES'
+        systemProperty 'forge.logging.console.level', 'debug'
+
+        modSource project.sourceSets.main
+    }
+
+    maybeCreate('client').configure {
+        // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+        systemProperty 'forge.enabledGameTestNamespaces', mod_id
+    }
+
+    maybeCreate('server').configure {
+        systemProperty 'forge.enabledGameTestNamespaces', mod_id
+        arguments.add '--nogui'
+    }
+
+    // This run config launches GameTestServer and runs all registered gametests, then exits.
+    maybeCreate('gameTestServer').configure {
+        systemProperty 'forge.enabledGameTestNamespaces', mod_id
+    }
+
+    maybeCreate('data').configure {
+        // Os caminhos apontam para a raiz compartilhada (src/), não para a pasta da versão.
+        arguments.addAll(
+            '--mod', mod_id,
+            '--all',
+            '--output', rootProject.file('src/generated/resources/').absolutePath,
+            '--existing', rootProject.file('src/main/resources/').absolutePath
+        )
+    }
+}
+
+dependencies {
+    // Specify the version of Minecraft to use via NeoForge.
+    implementation "net.neoforged:neoforge:${neo_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    compileOnly "maven.modrinth:nvQzSEkH:${jade_version}"
+    compileOnly "maven.modrinth:patchouli:${patchouli_version}"
+}

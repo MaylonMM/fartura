@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FO",
+    "TT"
+  ],
+  "key": {
+    "F": {
+      "type": "fartura:water_potion"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "id": "fartura:wheat_dough",
+    "count": 2
+  }
+}

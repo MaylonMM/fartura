@@ -1,0 +1,64 @@
+// Configuração específica do Forge, aplicada pelo build.gradle.kts quando mod_loader=forge.
+// Groovy: os acessores tipados do ForgeGradle não são gerados em scripts aplicados por apply(from).
+
+apply plugin: 'net.minecraftforge.gradle'
+
+// Classes e recursos no mesmo diretório: o FG7 trata a pasta do mod como módulo Java único.
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/${it.name}")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
+}
+
+minecraft.mavenizer(project.repositories)
+
+def forge_version = project.property('forge_version')
+def jei_version = project.property('jei_version')
+def minecraft_version = project.property('minecraft_version')
+def mod_id = project.property('mod_id')
+
+minecraft {
+    runs {
+        client {
+            workingDir = project.file('runs/client')
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+            systemProperty 'mixin.debug.verbose', 'true'
+        }
+        server {
+            workingDir = project.file('runs/server')
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+            args '--nogui'
+            mods {
+                "${mod_id}" { sources sourceSets.main }
+            }
+        }
+        data {
+            workingDir = project.file('runs/data')
+            args '--mod', mod_id,
+                '--all',
+                '--output', rootProject.file('src/generated/resources/').absolutePath,
+                '--existing', rootProject.file('src/main/resources/').absolutePath
+            mods {
+                "${mod_id}" { sources sourceSets.main }
+            }
+        }
+    }
+}
+
+// Jade não tem build Forge 1.21.1 no Maven; a integração fica só no NeoForge.
+// O guia (Patchouli) também é só NeoForge.
+sourceSets {
+    main {
+        java {
+            exclude 'com/fartura/compat/jade/**'
+            exclude 'com/fartura/item/GuideBookItem.java'
+        }
+    }
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${forge_version}")
+    compileOnly "mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"
+    // Jade e Patchouli (Forge 1.21.1) não estão no Maven: coloque os jars em libs/.
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}

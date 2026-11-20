@@ -11,14 +11,27 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+//? if neoforge {
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent;
+//?} else {
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
+//?}
 
+//? if neoforge {
 @EventBusSubscriber(modid = Fartura.MODID)
+//?} else {
+@Mod.EventBusSubscriber(modid = Fartura.MODID)
+//?}
 public final class KnifeEvents {
     private static final int GLOWING_TICKS = 200;
     private static final int SPEED_TICKS = 200;
@@ -30,7 +43,11 @@ public final class KnifeEvents {
     }
 
     @SubscribeEvent
+    //? if neoforge {
     public static void onDamagePost(LivingDamageEvent.Post event) {
+//?} else {
+    public static void onDamagePost(LivingDamageEvent event) {
+//?}
         if (event.getEntity().level().isClientSide) {
             return;
         }

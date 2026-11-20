@@ -3,6 +3,7 @@ pluginManagement {
         mavenLocal()
         gradlePluginPortal()
         maven { url = uri("https://maven.neoforged.net/releases") }
+        maven { url = uri("https://maven.minecraftforge.net") }
     }
 }
 
@@ -17,6 +18,6 @@ stonecutter {
     kotlinController = true
     centralScript = "build.gradle.kts"
     create(rootProject) {
-        versions("1.21.1-neoforge" to "1.21.1")
+        versions("1.21.1-neoforge" to "1.21.1", "1.21.1-forge" to "1.21.1")
     }
 }

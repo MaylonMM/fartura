@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:orange_biomes",
+  "features": "fartura:orange_tree",
+  "step": "top_layer_modification"
+}

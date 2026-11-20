@@ -5,7 +5,7 @@ import com.fartura.Fartura;
 import com.fartura.registry.ModMenus;
 
 import net.minecraft.advancements.AdvancementHolder;
-import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;
@@ -16,8 +16,13 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.item.ItemStack;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.SlotItemHandler;
+//?}
 
 public class PanelaMenu extends AbstractContainerMenu {
     private static final int GRID_X = 30;
@@ -31,7 +36,7 @@ public class PanelaMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     /** Construtor do cliente, usado ao abrir o menu pelo pacote. */
-    public PanelaMenu(int containerId, Inventory playerInventory, RegistryFriendlyByteBuf buf) {
+    public PanelaMenu(int containerId, Inventory playerInventory, FriendlyByteBuf buf) {
         this(containerId, playerInventory, new ItemStackHandler(PanelaBlockEntity.SLOT_COUNT), new SimpleContainerData(3));
     }
 

@@ -1,0 +1,18 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "AW"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rice"
+    },
+    "W": {
+      "type": "fartura:water_potion"
+    }
+  },
+  "result": {
+    "id": "fartura:cooked_rice",
+    "count": 1
+  }
+}

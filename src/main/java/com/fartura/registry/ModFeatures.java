@@ -11,8 +11,13 @@ import com.mojang.serialization.Codec;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredHolder;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public final class ModFeatures {
     public static final DeferredRegister<Feature<?>> FEATURES =

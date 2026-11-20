@@ -1,0 +1,25 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "FC",
+    "MA"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "M": {
+      "item": "fartura:wheat_dough"
+    },
+    "A": {
+      "type": "fartura:water_potion"
+    }
+  },
+  "result": {
+    "id": "fartura:chicken_noodles",
+    "count": 1
+  }
+}

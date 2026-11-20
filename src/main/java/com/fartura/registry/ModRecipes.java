@@ -10,8 +10,13 @@ import com.fartura.recipe.PanelaRecipe;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
+//? if neoforge {
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+//?} else {
+import com.fartura.compat.registry.DeferredHolder;
+import com.fartura.compat.registry.DeferredRegister;
+//?}
 
 public final class ModRecipes {
     public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES =

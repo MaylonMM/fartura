@@ -1,0 +1,22 @@
+{
+  "type": "fartura:panela_display",
+  "pattern": [
+    "FF",
+    "SA"
+  ],
+  "key": {
+    "F": {
+      "item": "fartura:corn_flour"
+    },
+    "S": {
+      "tag": "c:salt"
+    },
+    "A": {
+      "type": "fartura:water_potion"
+    }
+  },
+  "result": {
+    "id": "fartura:cuscuz",
+    "count": 1
+  }
+}

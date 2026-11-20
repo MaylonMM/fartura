@@ -4,14 +4,18 @@ import com.fartura.block.entity.KettleBlockEntity;
 import com.fartura.block.entity.PanelaBlockEntity;
 import com.fartura.registry.ModMenus;
 
-import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.SimpleContainerData;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+//?}
 
 public class KettleMenu extends PanelaMenu {
     /** Construtor do cliente, usado ao abrir o menu pelo pacote. */
-    public KettleMenu(int containerId, Inventory playerInventory, RegistryFriendlyByteBuf buf) {
+    public KettleMenu(int containerId, Inventory playerInventory, FriendlyByteBuf buf) {
         this(containerId, playerInventory, new ItemStackHandler(PanelaBlockEntity.SLOT_COUNT), new SimpleContainerData(3));
     }
 

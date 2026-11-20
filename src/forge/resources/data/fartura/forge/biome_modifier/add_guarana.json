@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:guarana_biomes",
+  "features": "fartura:guarana",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "fartura:mod_recipe",
+  "mod": "farm_and_charm",
+  "recipe": {
+    "type": "farm_and_charm:mincer",
+    "ingredient": {
+      "item": "fartura:corn_kernels"
+    },
+    "recipe_type": "STONE",
+    "result": {
+      "id": "fartura:corn_flour",
+      "count": 1
+    }
+  }
+}

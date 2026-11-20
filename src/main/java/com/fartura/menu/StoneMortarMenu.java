@@ -4,7 +4,7 @@ import com.fartura.block.entity.StoneMortarBlockEntity;
 import com.fartura.recipe.MortarRecipe;
 import com.fartura.registry.ModMenus;
 
-import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.StackedContents;
@@ -16,8 +16,13 @@ import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.SlotItemHandler;
+//?}
 
 public class StoneMortarMenu extends RecipeBookMenu<SingleRecipeInput, MortarRecipe> {
     private static final int PLAYER_INV_Y = 84;
@@ -27,7 +32,7 @@ public class StoneMortarMenu extends RecipeBookMenu<SingleRecipeInput, MortarRec
     private final ContainerData data;
 
     /** Construtor do cliente, usado ao abrir o menu pelo pacote. */
-    public StoneMortarMenu(int containerId, Inventory playerInventory, RegistryFriendlyByteBuf buf) {
+    public StoneMortarMenu(int containerId, Inventory playerInventory, FriendlyByteBuf buf) {
         this(containerId, playerInventory, new ItemStackHandler(2), new SimpleContainerData(2));
     }
 

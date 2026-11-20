@@ -22,7 +22,11 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+//? if neoforge {
 import net.neoforged.neoforge.items.ItemStackHandler;
+//?} else {
+import net.minecraftforge.items.ItemStackHandler;
+//?}
 
 import java.util.Optional;
 

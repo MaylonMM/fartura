@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:wild_tomato_biomes",
+  "features": "fartura:wild_tomato",
+  "step": "vegetal_decoration"
+}

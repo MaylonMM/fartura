@@ -61,7 +61,11 @@ public class PanelaBlock extends BaseEntityBlock {
         if (!level.isClientSide()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity instanceof PanelaBlockEntity panela) {
+                //? if neoforge {
                 player.openMenu(panela, buf -> buf.writeBlockPos(pos));
+//?} else {
+                ((net.minecraft.server.level.ServerPlayer) player).openMenu(panela, pos);
+//?}
             }
         }
         return InteractionResult.SUCCESS;

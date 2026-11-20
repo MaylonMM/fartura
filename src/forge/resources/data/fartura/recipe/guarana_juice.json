@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GA",
+    "F "
+  ],
+  "key": {
+    "G": {
+      "item": "fartura:guarana"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "type": "fartura:water_potion"
+    }
+  },
+  "result": {
+    "id": "fartura:guarana_juice",
+    "count": 1
+  }
+}

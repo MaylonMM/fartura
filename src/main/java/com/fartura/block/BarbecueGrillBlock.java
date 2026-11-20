@@ -122,7 +122,11 @@ public class BarbecueGrillBlock extends BaseEntityBlock {
         if (!level.isClientSide()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity instanceof BarbecueGrillBlockEntity grill) {
+                //? if neoforge {
                 player.openMenu(grill, buf -> buf.writeBlockPos(pos));
+//?} else {
+                ((net.minecraft.server.level.ServerPlayer) player).openMenu(grill, pos);
+//?}
             }
         }
         return InteractionResult.SUCCESS;

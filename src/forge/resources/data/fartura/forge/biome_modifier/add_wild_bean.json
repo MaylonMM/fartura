@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#fartura:wild_bean_biomes",
+  "features": "fartura:wild_bean",
+  "step": "vegetal_decoration"
+}
